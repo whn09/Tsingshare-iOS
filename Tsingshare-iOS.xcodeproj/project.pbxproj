@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1D88E21A8E25D3004689DA /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D88E11A8E25D3004689DA /* ThirdViewController.swift */; };
 		9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E11A8E225300B54F14 /* AppDelegate.swift */; };
 		9EB146E41A8E225300B54F14 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E31A8E225300B54F14 /* FirstViewController.swift */; };
 		9EB146E61A8E225300B54F14 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E51A8E225300B54F14 /* SecondViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E1D88E11A8E25D3004689DA /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9EB146DC1A8E225300B54F14 /* Tsingshare-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tsingshare-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB146E01A8E225300B54F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EB146E11A8E225300B54F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				9EB146E11A8E225300B54F14 /* AppDelegate.swift */,
 				9EB146E31A8E225300B54F14 /* FirstViewController.swift */,
 				9EB146E51A8E225300B54F14 /* SecondViewController.swift */,
+				9E1D88E11A8E25D3004689DA /* ThirdViewController.swift */,
 				9EB146E71A8E225300B54F14 /* Main.storyboard */,
 				9EB146EA1A8E225300B54F14 /* Images.xcassets */,
 				9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				9EB146E61A8E225300B54F14 /* SecondViewController.swift in Sources */,
 				9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */,
+				9E1D88E21A8E25D3004689DA /* ThirdViewController.swift in Sources */,
 				9EB146E41A8E225300B54F14 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				9EB146FF1A8E225400B54F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EB147001A8E225400B54F14 /* Build configuration list for PBXNativeTarget "Tsingshare-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				9EB147021A8E225400B54F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
