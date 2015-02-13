@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  RegisterViewController.swift
 //  Tsingshare-iOS
 //
 //  Created by whn13 on 15/2/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
