@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E11A8E225300B54F14 /* AppDelegate.swift */; };
+		9EB146E41A8E225300B54F14 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E31A8E225300B54F14 /* FirstViewController.swift */; };
+		9EB146E61A8E225300B54F14 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E51A8E225300B54F14 /* SecondViewController.swift */; };
+		9EB146E91A8E225300B54F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146E71A8E225300B54F14 /* Main.storyboard */; };
+		9EB146EB1A8E225300B54F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146EA1A8E225300B54F14 /* Images.xcassets */; };
+		9EB146EE1A8E225300B54F14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */; };
+		9EB146FA1A8E225400B54F14 /* Tsingshare_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146F91A8E225400B54F14 /* Tsingshare_iOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EB146F41A8E225400B54F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EB146D41A8E225300B54F14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB146DB1A8E225300B54F14;
+			remoteInfo = "Tsingshare-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EB146DC1A8E225300B54F14 /* Tsingshare-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tsingshare-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB146E01A8E225300B54F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB146E11A8E225300B54F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EB146E31A8E225300B54F14 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9EB146E51A8E225300B54F14 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9EB146E81A8E225300B54F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EB146EA1A8E225300B54F14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9EB146ED1A8E225300B54F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9EB146F31A8E225400B54F14 /* Tsingshare-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tsingshare-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB146F81A8E225400B54F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB146F91A8E225400B54F14 /* Tsingshare_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tsingshare_iOSTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB146D91A8E225300B54F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB146F01A8E225400B54F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EB146D31A8E225300B54F14 = {
+			isa = PBXGroup;
+			children = (
+				9EB146DE1A8E225300B54F14 /* Tsingshare-iOS */,
+				9EB146F61A8E225400B54F14 /* Tsingshare-iOSTests */,
+				9EB146DD1A8E225300B54F14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EB146DD1A8E225300B54F14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB146DC1A8E225300B54F14 /* Tsingshare-iOS.app */,
+				9EB146F31A8E225400B54F14 /* Tsingshare-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB146DE1A8E225300B54F14 /* Tsingshare-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9EB146E11A8E225300B54F14 /* AppDelegate.swift */,
+				9EB146E31A8E225300B54F14 /* FirstViewController.swift */,
+				9EB146E51A8E225300B54F14 /* SecondViewController.swift */,
+				9EB146E71A8E225300B54F14 /* Main.storyboard */,
+				9EB146EA1A8E225300B54F14 /* Images.xcassets */,
+				9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */,
+				9EB146DF1A8E225300B54F14 /* Supporting Files */,
+			);
+			path = "Tsingshare-iOS";
+			sourceTree = "<group>";
+		};
+		9EB146DF1A8E225300B54F14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB146E01A8E225300B54F14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EB146F61A8E225400B54F14 /* Tsingshare-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EB146F91A8E225400B54F14 /* Tsingshare_iOSTests.swift */,
+				9EB146F71A8E225400B54F14 /* Supporting Files */,
+			);
+			path = "Tsingshare-iOSTests";
+			sourceTree = "<group>";
+		};
+		9EB146F71A8E225400B54F14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB146F81A8E225400B54F14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB146DB1A8E225300B54F14 /* Tsingshare-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB146FD1A8E225400B54F14 /* Build configuration list for PBXNativeTarget "Tsingshare-iOS" */;
+			buildPhases = (
+				9EB146D81A8E225300B54F14 /* Sources */,
+				9EB146D91A8E225300B54F14 /* Frameworks */,
+				9EB146DA1A8E225300B54F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tsingshare-iOS";
+			productName = "Tsingshare-iOS";
+			productReference = 9EB146DC1A8E225300B54F14 /* Tsingshare-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EB146F21A8E225400B54F14 /* Tsingshare-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB147001A8E225400B54F14 /* Build configuration list for PBXNativeTarget "Tsingshare-iOSTests" */;
+			buildPhases = (
+				9EB146EF1A8E225400B54F14 /* Sources */,
+				9EB146F01A8E225400B54F14 /* Frameworks */,
+				9EB146F11A8E225400B54F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EB146F51A8E225400B54F14 /* PBXTargetDependency */,
+			);
+			name = "Tsingshare-iOSTests";
+			productName = "Tsingshare-iOSTests";
+			productReference = 9EB146F31A8E225400B54F14 /* Tsingshare-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EB146D41A8E225300B54F14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = whn13;
+				TargetAttributes = {
+					9EB146DB1A8E225300B54F14 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					9EB146F21A8E225400B54F14 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9EB146DB1A8E225300B54F14;
+					};
+				};
+			};
+			buildConfigurationList = 9EB146D71A8E225300B54F14 /* Build configuration list for PBXProject "Tsingshare-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EB146D31A8E225300B54F14;
+			productRefGroup = 9EB146DD1A8E225300B54F14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB146DB1A8E225300B54F14 /* Tsingshare-iOS */,
+				9EB146F21A8E225400B54F14 /* Tsingshare-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EB146DA1A8E225300B54F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB146E91A8E225300B54F14 /* Main.storyboard in Resources */,
+				9EB146EE1A8E225300B54F14 /* LaunchScreen.xib in Resources */,
+				9EB146EB1A8E225300B54F14 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB146F11A8E225400B54F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EB146D81A8E225300B54F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB146E61A8E225300B54F14 /* SecondViewController.swift in Sources */,
+				9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */,
+				9EB146E41A8E225300B54F14 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EB146EF1A8E225400B54F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB146FA1A8E225400B54F14 /* Tsingshare_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EB146F51A8E225400B54F14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EB146DB1A8E225300B54F14 /* Tsingshare-iOS */;
+			targetProxy = 9EB146F41A8E225400B54F14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EB146E71A8E225300B54F14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB146E81A8E225300B54F14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB146ED1A8E225300B54F14 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EB146FB1A8E225400B54F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EB146FC1A8E225400B54F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EB146FE1A8E225400B54F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tsingshare-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EB146FF1A8E225400B54F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tsingshare-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9EB147011A8E225400B54F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tsingshare-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tsingshare-iOS.app/Tsingshare-iOS";
+			};
+			name = Debug;
+		};
+		9EB147021A8E225400B54F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tsingshare-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tsingshare-iOS.app/Tsingshare-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EB146D71A8E225300B54F14 /* Build configuration list for PBXProject "Tsingshare-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB146FB1A8E225400B54F14 /* Debug */,
+				9EB146FC1A8E225400B54F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB146FD1A8E225400B54F14 /* Build configuration list for PBXNativeTarget "Tsingshare-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB146FE1A8E225400B54F14 /* Debug */,
+				9EB146FF1A8E225400B54F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9EB147001A8E225400B54F14 /* Build configuration list for PBXNativeTarget "Tsingshare-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB147011A8E225400B54F14 /* Debug */,
+				9EB147021A8E225400B54F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EB146D41A8E225300B54F14 /* Project object */;
+}
