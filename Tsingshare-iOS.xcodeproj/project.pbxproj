@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E1D88E21A8E25D3004689DA /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D88E11A8E25D3004689DA /* MeViewController.swift */; };
-		9E1D88E91A8E4B50004689DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D88E81A8E4B50004689DA /* LoginViewController.swift */; };
-		9E1D88EB1A8E4B5E004689DA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D88EA1A8E4B5E004689DA /* RegisterViewController.swift */; };
+		9E1D88E91A8E4B50004689DA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D88E81A8E4B50004689DA /* SigninViewController.swift */; };
+		9E1D88EB1A8E4B5E004689DA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1D88EA1A8E4B5E004689DA /* SignupViewController.swift */; };
 		9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E11A8E225300B54F14 /* AppDelegate.swift */; };
 		9EB146E41A8E225300B54F14 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E31A8E225300B54F14 /* MessageViewController.swift */; };
 		9EB146E61A8E225300B54F14 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E51A8E225300B54F14 /* DiscoveryViewController.swift */; };
@@ -17,6 +17,7 @@
 		9EB146EB1A8E225300B54F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146EA1A8E225300B54F14 /* Images.xcassets */; };
 		9EB146EE1A8E225300B54F14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */; };
 		9EB146FA1A8E225400B54F14 /* Tsingshare_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146F91A8E225400B54F14 /* Tsingshare_iOSTests.swift */; };
+		9EB52FF81A8F3963004AB9F3 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,8 @@
 
 /* Begin PBXFileReference section */
 		9E1D88E11A8E25D3004689DA /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
-		9E1D88E81A8E4B50004689DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9E1D88EA1A8E4B5E004689DA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9E1D88E81A8E4B50004689DA /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		9E1D88EA1A8E4B5E004689DA /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		9EB146DC1A8E225300B54F14 /* Tsingshare-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tsingshare-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB146E01A8E225300B54F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EB146E11A8E225300B54F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		9EB146F31A8E225400B54F14 /* Tsingshare-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tsingshare-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB146F81A8E225400B54F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EB146F91A8E225400B54F14 /* Tsingshare_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tsingshare_iOSTests.swift; sourceTree = "<group>"; };
+		9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +91,9 @@
 				9EB146E31A8E225300B54F14 /* MessageViewController.swift */,
 				9EB146E51A8E225300B54F14 /* DiscoveryViewController.swift */,
 				9E1D88E11A8E25D3004689DA /* MeViewController.swift */,
-				9E1D88E81A8E4B50004689DA /* LoginViewController.swift */,
-				9E1D88EA1A8E4B5E004689DA /* RegisterViewController.swift */,
+				9E1D88E81A8E4B50004689DA /* SigninViewController.swift */,
+				9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */,
+				9E1D88EA1A8E4B5E004689DA /* SignupViewController.swift */,
 				9EB146E71A8E225300B54F14 /* Main.storyboard */,
 				9EB146EA1A8E225300B54F14 /* Images.xcassets */,
 				9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */,
@@ -227,8 +230,9 @@
 				9EB146E61A8E225300B54F14 /* DiscoveryViewController.swift in Sources */,
 				9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */,
 				9E1D88E21A8E25D3004689DA /* MeViewController.swift in Sources */,
-				9E1D88EB1A8E4B5E004689DA /* RegisterViewController.swift in Sources */,
-				9E1D88E91A8E4B50004689DA /* LoginViewController.swift in Sources */,
+				9E1D88EB1A8E4B5E004689DA /* SignupViewController.swift in Sources */,
+				9EB52FF81A8F3963004AB9F3 /* ForgetPasswordViewController.swift in Sources */,
+				9E1D88E91A8E4B50004689DA /* SigninViewController.swift in Sources */,
 				9EB146E41A8E225300B54F14 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
