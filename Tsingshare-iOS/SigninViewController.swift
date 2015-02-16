@@ -38,5 +38,7 @@ class SigninViewController: UIViewController {
     
     @IBAction func Signin() {
         println("username = \(username.text!) and password = \(password.text!)")
+        var userModel = UserModel()
+        userModel.signin(username.text!, password: password.text!)
     }
 }
