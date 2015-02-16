@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SimpleAlert
 
 class SignupViewController: UIViewController {
 
@@ -40,5 +42,41 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBAction func Signup() {
         println("username = \(username.text!) and password = \(password.text!)")
+        var param = [
+            "firstname": firstname.text!,
+            "lastname": lastname.text!,
+            "email": email.text!,
+            "telephone": telephone.text!,
+            "username": username.text!,
+            "password": password.text!
+        ]
+        Alamofire.request(.POST, APIModel().APIUrl+"/auth/signup", parameters: param)
+            .responseJSON { (request, response, data, error) in
+                if(error == nil && data != nil) {
+                    var info = data as NSDictionary
+                    println(info)
+                    if var _id = info["_id"] as String? {
+                        // signin success
+                        //println(_id);
+                        println("signup success")
+                        self.performSegueWithIdentifier("signupsuccess", sender: self)
+                    }
+                    else {
+                        // signin fail
+                        var messageString = info["message"] as String!
+                        println(messageString);
+                        let alert = SimpleAlert.Controller(title: "Signup Fail", message: messageString, style: .Alert)
+                        alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    }
+                }
+                else {
+                    println("network error")
+                    let alert = SimpleAlert.Controller(title: "Signup Fail", message: "network error", style: .Alert)
+                    alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                    self.presentViewController(alert, animated: true, completion: nil)
+                }
+        }
+
     }
 }

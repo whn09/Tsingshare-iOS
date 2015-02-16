@@ -76,7 +76,7 @@
                     <tabBarItem key="tabBarItem" title="Message" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="content" destination="Roz-3g-96w" id="res-sC-2MS"/>
-                        <outletCollection property="messageList" destination="sFq-UN-bOl" id="b5q-rz-Z59"/>
+                        <outletCollection property="messageList" destination="sFq-UN-bOl" collectionClass="NSMutableArray" id="b5q-rz-Z59"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -354,6 +354,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Signup" destination="a4n-5M-5Xa" eventType="touchUpInside" id="yQi-yr-NRI"/>
+                                    <segue destination="49e-Tb-3d3" kind="presentation" identifier="signupsuccess" id="Gbm-Dv-fG2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5ic-mU-W87">
@@ -710,6 +711,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Al4-ag-lfT"/>
-        <segue reference="fEJ-r2-xqE"/>
+        <segue reference="JjU-9E-LUI"/>
+        <segue reference="Gbm-Dv-fG2"/>
     </inferredMetricsTieBreakers>
 </document>
