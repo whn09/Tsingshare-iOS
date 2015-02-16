@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class SignupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +32,13 @@ class RegisterViewController: UIViewController {
     }
     */
 
+    @IBOutlet weak var firstname: UITextField!
+    @IBOutlet weak var lastname: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var telephone: UITextField!
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBAction func Signup() {
+        println("username = \(username.text!) and password = \(password.text!)")
+    }
 }

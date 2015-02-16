@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class SigninViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +32,11 @@ class LoginViewController: UIViewController {
     }
     */
 
+    @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func Signin() {
+        println("username = \(username.text!) and password = \(password.text!)")
+    }
 }

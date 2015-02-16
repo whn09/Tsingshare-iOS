@@ -1,14 +1,14 @@
 //
-//  ForgetPasswordViewController.swift
+//  WebBrowserViewController.swift
 //  Tsingshare-iOS
 //
-//  Created by whn13 on 15/2/14.
+//  Created by whn13 on 15/2/15.
 //  Copyright (c) 2015年 whn13. All rights reserved.
 //
 
 import UIKit
 
-class ForgetPasswordViewController: UIViewController {
+class WebBrowserViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +32,4 @@ class ForgetPasswordViewController: UIViewController {
     }
     */
 
-    @IBOutlet weak var username: UITextField!
-    @IBAction func RestorePassword() {
-        println("username = \(username.text!)")
-
-    }
 }
