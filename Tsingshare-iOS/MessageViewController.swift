@@ -13,6 +13,7 @@ class MessageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        list()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +22,13 @@ class MessageViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var content: UITextField!
+    @IBOutlet var messageList: [UITableView]!
+    @IBAction func send() {
+    }
+    
+    func list() {
+        println("hehe")
+    }
 }
 

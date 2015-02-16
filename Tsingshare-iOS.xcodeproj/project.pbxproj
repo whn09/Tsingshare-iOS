@@ -13,12 +13,12 @@
 		9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E11A8E225300B54F14 /* AppDelegate.swift */; };
 		9EB146E41A8E225300B54F14 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E31A8E225300B54F14 /* MessageViewController.swift */; };
 		9EB146E61A8E225300B54F14 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146E51A8E225300B54F14 /* DiscoveryViewController.swift */; };
-		9EB146E91A8E225300B54F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146E71A8E225300B54F14 /* Main.storyboard */; };
 		9EB146EB1A8E225300B54F14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146EA1A8E225300B54F14 /* Images.xcassets */; };
 		9EB146EE1A8E225300B54F14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */; };
 		9EB146FA1A8E225400B54F14 /* Tsingshare_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB146F91A8E225400B54F14 /* Tsingshare_iOSTests.swift */; };
 		9EB52FF81A8F3963004AB9F3 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */; };
 		9EBF8E881A92154500689404 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF8E871A92154500689404 /* APIModel.swift */; };
+		9EBF8E8C1A9244BB00689404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF8E8B1A9244BB00689404 /* Main.storyboard */; };
 		9EE6C1291A9203AD00D05992 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6C1281A9203AD00D05992 /* UserModel.swift */; };
 		9EF1CA391A90E2EF00BB9CEC /* WebBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1CA381A90E2EF00BB9CEC /* WebBrowserViewController.swift */; };
 		AF92247D258530A2901C741D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06C9E870C7DFFAB4EB6FAC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -44,7 +44,6 @@
 		9EB146E11A8E225300B54F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EB146E31A8E225300B54F14 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		9EB146E51A8E225300B54F14 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
-		9EB146E81A8E225300B54F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EB146EA1A8E225300B54F14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9EB146ED1A8E225300B54F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9EB146F31A8E225400B54F14 /* Tsingshare-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tsingshare-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,8 +51,8 @@
 		9EB146F91A8E225400B54F14 /* Tsingshare_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tsingshare_iOSTests.swift; sourceTree = "<group>"; };
 		9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		9EBF8E871A92154500689404 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		9EBF8E8B1A9244BB00689404 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9EE5F91A1A92088A009A86F6 /* libPods-Alamofire.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Alamofire.a"; path = "Pods/build/Debug-iphoneos/libPods-Alamofire.a"; sourceTree = "<group>"; };
-		9EE5F91C1A9208C2009A86F6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		9EE5F91D1A9208C2009A86F6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		9EE5F91E1A920912009A86F6 /* libPods-Alamofire.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Alamofire.a"; path = "Pods/build/Debug-iphoneos/libPods-Alamofire.a"; sourceTree = "<group>"; };
 		9EE5F9201A920927009A86F6 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 			children = (
 				9EB146E11A8E225300B54F14 /* AppDelegate.swift */,
 				9EE6C1281A9203AD00D05992 /* UserModel.swift */,
+				9EBF8E8B1A9244BB00689404 /* Main.storyboard */,
 				9EBF8E871A92154500689404 /* APIModel.swift */,
 				9EB146E31A8E225300B54F14 /* MessageViewController.swift */,
 				9EB146E51A8E225300B54F14 /* DiscoveryViewController.swift */,
@@ -115,7 +115,6 @@
 				9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */,
 				9E1D88EA1A8E4B5E004689DA /* SignupViewController.swift */,
 				9EF1CA381A90E2EF00BB9CEC /* WebBrowserViewController.swift */,
-				9EB146E71A8E225300B54F14 /* Main.storyboard */,
 				9EB146EA1A8E225300B54F14 /* Images.xcassets */,
 				9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */,
 				9EB146DF1A8E225300B54F14 /* Supporting Files */,
@@ -251,7 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EB146E91A8E225300B54F14 /* Main.storyboard in Resources */,
+				9EBF8E8C1A9244BB00689404 /* Main.storyboard in Resources */,
 				9EB146EE1A8E225300B54F14 /* LaunchScreen.xib in Resources */,
 				9EB146EB1A8E225300B54F14 /* Images.xcassets in Resources */,
 			);
@@ -351,15 +350,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9EB146E71A8E225300B54F14 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EB146E81A8E225300B54F14 /* Base */,
-				9EE5F91C1A9208C2009A86F6 /* zh-Hans */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9EB146EC1A8E225300B54F14 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

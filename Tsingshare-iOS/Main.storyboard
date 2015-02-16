@@ -17,48 +17,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instant Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Roz-3g-96w">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Instant Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Roz-3g-96w">
                                 <rect key="frame" x="54" y="504" width="462" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YBw-Uc-xG7"/>
+                                    <constraint firstAttribute="width" constant="462" id="fvt-kZ-pzt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ON-fG-mSW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNx-Co-zHf">
+                                <rect key="frame" x="16" y="498" width="30" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="648-d8-PCU"/>
+                                    <constraint firstAttribute="width" constant="30" id="M16-xV-LJw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="➕">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sFq-UN-bOl">
+                                <rect key="frame" x="16" y="20" width="568" height="465"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ON-fG-mSW">
                                 <rect key="frame" x="518" y="498" width="66" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="Z6J-bk-Yhj"/>
+                                    <constraint firstAttribute="height" constant="41" id="fsT-gW-uOH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Send">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="send" destination="9pv-A4-QxB" eventType="touchUpInside" id="hVe-dH-Z5S"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNx-Co-zHf">
-                                <rect key="frame" x="16" y="493" width="30" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="+">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sFq-UN-bOl">
-                                <rect key="frame" x="16" y="20" width="568" height="465"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Roz-3g-96w" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="38" id="2jW-js-KQM"/>
-                            <constraint firstItem="7ON-fG-mSW" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="6tG-ds-Mxd"/>
-                            <constraint firstItem="7ON-fG-mSW" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="502" id="Eb9-w2-AwE"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="uNx-Co-zHf" secondAttribute="bottom" constant="17" id="EpM-Ro-qen"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="7ON-fG-mSW" secondAttribute="bottom" constant="12" id="BRm-bH-1zj"/>
+                            <constraint firstItem="Roz-3g-96w" firstAttribute="leading" secondItem="uNx-Co-zHf" secondAttribute="trailing" constant="8" id="C99-7U-sWL"/>
                             <constraint firstItem="sFq-UN-bOl" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="JuI-Rq-TBp"/>
-                            <constraint firstItem="uNx-Co-zHf" firstAttribute="top" secondItem="sFq-UN-bOl" secondAttribute="bottom" constant="8" symbolic="YES" id="Muf-i9-dl0"/>
-                            <constraint firstItem="uNx-Co-zHf" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="NMG-Hx-ki3"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="7ON-fG-mSW" secondAttribute="bottom" constant="12" id="Oo5-9a-NAC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Roz-3g-96w" secondAttribute="trailing" constant="68" id="RLk-yv-SnA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uNx-Co-zHf" secondAttribute="trailing" constant="538" id="hWo-1I-hUL"/>
+                            <constraint firstItem="Roz-3g-96w" firstAttribute="top" secondItem="sFq-UN-bOl" secondAttribute="bottom" constant="19" id="KSj-0G-G6U"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="uNx-Co-zHf" secondAttribute="bottom" constant="12" id="SuE-05-VfQ"/>
+                            <constraint firstItem="uNx-Co-zHf" firstAttribute="top" secondItem="sFq-UN-bOl" secondAttribute="bottom" constant="13" id="W0Y-Tm-ku6"/>
+                            <constraint firstItem="7ON-fG-mSW" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Y4i-4E-9AM"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Roz-3g-96w" secondAttribute="bottom" constant="17" id="itL-7f-aiM"/>
+                            <constraint firstItem="7ON-fG-mSW" firstAttribute="top" secondItem="sFq-UN-bOl" secondAttribute="bottom" constant="13" id="m74-pg-1JA"/>
                             <constraint firstItem="sFq-UN-bOl" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="q4A-19-1s2"/>
                             <constraint firstItem="sFq-UN-bOl" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="u4D-B4-5PN"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Roz-3g-96w" secondAttribute="bottom" constant="17" id="xqd-zg-2G3"/>
+                            <constraint firstItem="7ON-fG-mSW" firstAttribute="leading" secondItem="Roz-3g-96w" secondAttribute="trailing" constant="2" id="yxM-8N-UuB"/>
+                            <constraint firstItem="uNx-Co-zHf" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="zET-hk-mtL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Message" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="content" destination="Roz-3g-96w" id="res-sC-2MS"/>
+                        <outletCollection property="messageList" destination="sFq-UN-bOl" id="b5q-rz-Z59"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,6 +242,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Signin" destination="gXP-zX-Tzu" eventType="touchUpInside" id="ax3-qz-YVj"/>
+                                    <segue destination="49e-Tb-3d3" kind="presentation" identifier="signinsuccess" id="yWB-rN-9j0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izn-Ou-eml">

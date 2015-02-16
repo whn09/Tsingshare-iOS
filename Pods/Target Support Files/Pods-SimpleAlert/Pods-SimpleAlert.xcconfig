@@ -1,0 +1,1 @@
+PODS_SIMPLEALERT_OTHER_LDFLAGS = -framework "UIKit"

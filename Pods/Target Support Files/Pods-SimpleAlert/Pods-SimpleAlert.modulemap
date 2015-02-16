@@ -1,0 +1,6 @@
+framework module SimpleAlert {
+  umbrella header "Pods-SimpleAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

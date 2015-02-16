@@ -10,7 +10,902 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>0176E1555902E33717615050</key>
+		<key>0099E3C531BFFF8D7C8D4159</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB2981BF82F6C4600D5EF0E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0198D4170D3B512F37674A79</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0B5AC4248F72744F3C89A552</string>
+				<string>A9F9E0E5E90B5FEC44E82E28</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>06D98CB7271058B523E657B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0B5AC4248F72744F3C89A552</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7F59209B95E515A8FBD99AE4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-SwiftyJSON/Pods-SwiftyJSON-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SwiftyJSON/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SwiftyJSON/Pods-SwiftyJSON.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SwiftyJSON</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0DC992625751E7202DCCD417</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A5D4F2C24618211A74B04120</string>
+				<string>82E6BC6D76D8332E878297B0</string>
+				<string>EFCB7B72D802DD545D902039</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14B084345269DFD664EDC2CB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Alamofire-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14EF2B9D0E4726370392E919</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E982B40EE76FDAC1BFDD0DDD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-SimpleAlert/Pods-SimpleAlert-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SimpleAlert/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SimpleAlert/Pods-SimpleAlert.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SimpleAlert</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>15601A6290EAA96221042296</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6C9AA07C731DB4B71EB681A6</string>
+				<string>DB0FC5BA04950FB75343BBB8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>16BF98991A8B48922F3AB064</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>17D2F065F35434296A0CD3C5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>180AB45DBA27E232EA795DC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1865893C614F2BA7D81D4059</key>
+		<dict>
+			<key>fileRef</key>
+			<string>451FB0F03734B7E6D647051D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>198701B971790CD90655DD8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Alamofire.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1C3DDBCC76B76A0460560FE8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-SimpleAlert-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1CD60BFF5F3599ECA84BCF7B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1E03BAD5CAD040B314DC8E51</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1E03BAD5CAD040B314DC8E51</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-SwiftyJSON-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2042A99B747247FAAF26F690</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FB45F8F37DE878D6F16D4A86</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20D2253135DF33BAE3F8FA6A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SwiftyJSON.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>215CE7CDF7F5D8C97A107B50</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB2981BF82F6C4600D5EF0E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>23F6BA48F3FD82B015E9E80D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>43B5B0180DD1717668414BEE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>245FC31290FE39496F75E676</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SimpleAlert.h</string>
+			<key>path</key>
+			<string>SimpleAlert/SimpleAlert.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>246F5E039E1DDE94AC8BCBDD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SwiftyJSON.swift</string>
+			<key>path</key>
+			<string>Source/SwiftyJSON.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>248F31B20887635C081D5165</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SimpleAlert.swift</string>
+			<key>path</key>
+			<string>SimpleAlert/SimpleAlert.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>313A47A9A43D6D2D01A7C7F0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1CD60BFF5F3599ECA84BCF7B</string>
+				<string>D4E310537605E60EE85E850D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>31647F56C62988FACF52B4F2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>246F5E039E1DDE94AC8BCBDD</string>
+				<string>CF83EB59CF74E392C4C5F13D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SwiftyJSON</string>
+			<key>path</key>
+			<string>SwiftyJSON</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32BD091CA9A5B60BF082D1F9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>96760E0B93CE66E2FA70FE38</string>
+				<string>647D49727B079D7732BAAEC6</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>373908667A838209C35D31E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Alamofire-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>376D4CF09324E71E39E01C08</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-SimpleAlert.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C90EC5C0AEC042C1A43B45F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4E7FBF0ACF63F9AFD17D4FCF</string>
+				<string>7F952C8FCB5B544460074D07</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3D5466D471838CEC594EABC1</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>96B37EFE1EE4ABBD34AFDFB1</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0DC992625751E7202DCCD417</string>
+				<string>585FD81DDA38D8D303A8DA93</string>
+				<string>533CF4CCA530BC06708B7FE4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-SimpleAlert</string>
+			<key>productName</key>
+			<string>Pods-SimpleAlert</string>
+			<key>productReference</key>
+			<string>FA92363853A1E181171427F5</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>4003F01428D3F8B7848BBF53</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>61F5D90E4B8C40A86C53BC3D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>3D5466D471838CEC594EABC1</string>
+			<key>remoteInfo</key>
+			<string>Pods-SimpleAlert</string>
+		</dict>
+		<key>43B5B0180DD1717668414BEE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>451FB0F03734B7E6D647051D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>465C02C9FB8DA929452EB4FF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BECFF3E5516400760511E16B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4817FB328F3929EA91544990</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A6B6896BD10FC3D2DA63CF3C</string>
+				<string>FC6B38D206A0249B34B42C8F</string>
+				<string>8D57A6871C6AC688CDACD9D9</string>
+				<string>573DAA9C62870FF24E184963</string>
+				<string>2042A99B747247FAAF26F690</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4B00C66627434CFC57FE9988</key>
+		<dict>
+			<key>fileRef</key>
+			<string>245FC31290FE39496F75E676</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4CA7FD7607DF10DFBFFB746D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4E7FBF0ACF63F9AFD17D4FCF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>14B084345269DFD664EDC2CB</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Alamofire/Pods-Alamofire-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Alamofire/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Alamofire/Pods-Alamofire.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Alamofire</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>533CF4CCA530BC06708B7FE4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B5AEA26C3E542E2C6CF4E4A0</string>
+				<string>4B00C66627434CFC57FE9988</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>53670D22B2CA26C6502066E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1865893C614F2BA7D81D4059</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>53807EDCC15DBE3751DDD6E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EFC309F5502DB0663976A756</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>555CB8CCEA05791AD82F9710</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>SimpleAlert.xib</string>
+			<key>path</key>
+			<string>SimpleAlert/SimpleAlert.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56EF9DEC71AE14E11BF84998</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BECFF3E5516400760511E16B</string>
+				<string>678D6E2C975887CED85D2C79</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Alamofire</string>
+			<key>path</key>
+			<string>Alamofire</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>573DAA9C62870FF24E184963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA737948F9B3D6D27B09D668</string>
+				<string>72284E3D684E0C817F9C6733</string>
+				<string>FA92363853A1E181171427F5</string>
+				<string>C2C0AA4F4E3E5D0325E51FDF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>585FD81DDA38D8D303A8DA93</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>91F02AADE9C46A07A5F243F2</string>
+				<string>7CCC1B412E6B957EFF03748A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>60E008AA7EB957336B76DC62</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>61F5D90E4B8C40A86C53BC3D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>FDA7266E79A77EE960542542</string>
+			<key>remoteInfo</key>
+			<string>Pods-SwiftyJSON</string>
+		</dict>
+		<key>61F5D90E4B8C40A86C53BC3D</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>15601A6290EAA96221042296</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>4817FB328F3929EA91544990</string>
+			<key>productRefGroup</key>
+			<string>573DAA9C62870FF24E184963</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>99FFB242081911ED17CFAEE7</string>
+				<string>A7E6323B8BA5DA3FA2A81B19</string>
+				<string>3D5466D471838CEC594EABC1</string>
+				<string>FDA7266E79A77EE960542542</string>
+			</array>
+		</dict>
+		<key>647D49727B079D7732BAAEC6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9F1CFFD891A0A4FFB420573D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods/Pods.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>673BAA0B73BF75D7324C0490</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>465C02C9FB8DA929452EB4FF</string>
+				<string>A71FD8132CBAE05284BA8AEB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>678D6E2C975887CED85D2C79</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7F1128E5147F717C7E80DAA7</string>
+				<string>D110B55D2816479E5EF06AE8</string>
+				<string>198701B971790CD90655DD8F</string>
+				<string>14B084345269DFD664EDC2CB</string>
+				<string>373908667A838209C35D31E3</string>
+				<string>E94CEB408BA9C021DF67932A</string>
+				<string>B665AD3E4DE709DECA15E775</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-Alamofire</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>688135F1D576EABF69E288FC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-SimpleAlert-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6BFBAA9C6FEA88A2FA221564</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-SimpleAlert-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6C9AA07C731DB4B71EB681A6</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -81,10 +976,106 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>03EB1D0A890E98AD7BB69119</key>
+		<key>72284E3D684E0C817F9C6733</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods.framework</string>
+			<key>path</key>
+			<string>Pods.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>72CEC7518DEC0D140DCCFA06</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>61F5D90E4B8C40A86C53BC3D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A7E6323B8BA5DA3FA2A81B19</string>
+			<key>remoteInfo</key>
+			<string>Pods-Alamofire</string>
+		</dict>
+		<key>72E8DCF8D53BBEAAE0579DDB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-Alamofire</string>
+			<key>target</key>
+			<string>A7E6323B8BA5DA3FA2A81B19</string>
+			<key>targetProxy</key>
+			<string>72CEC7518DEC0D140DCCFA06</string>
+		</dict>
+		<key>777501C263EF1179D68452BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-SwiftyJSON-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C5CE335B4576DFAE8D216DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-SwiftyJSON.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7CCC1B412E6B957EFF03748A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>85FFE93B7AA9DDF0BAB62738</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7F1128E5147F717C7E80DAA7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F59209B95E515A8FBD99AE4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SwiftyJSON-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F952C8FCB5B544460074D07</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>DC9635389F85F45533ED9433</string>
+			<string>14B084345269DFD664EDC2CB</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -118,7 +1109,7 @@
 				<key>MODULEMAP_FILE</key>
 				<string>Target Support Files/Pods-Alamofire/Pods-Alamofire.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
+				<string>NO</string>
 				<key>PRODUCT_NAME</key>
 				<string>Alamofire</string>
 				<key>SDKROOT</key>
@@ -135,52 +1126,45 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>Release</string>
 		</dict>
-		<key>07202805917BCFF596BC32D5</key>
+		<key>80E2DC28DA59774481BB8956</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>15EE496D4E7A4CF0F735085C</string>
-				<string>A34759D003ED8033E55ACDA5</string>
-				<string>7B0319A186456116E8C2DAF4</string>
-				<string>9EBB229530A82F1D0EE40D42</string>
-				<string>5CAC490BDE81544165E3EA81</string>
+				<string>0099E3C531BFFF8D7C8D4159</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
-		<key>085B62C7A27355D958AEE6CA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A05816BD259A927333DCB0FC</string>
-				<string>45397A2E8F1F0DE2352660D4</string>
-				<string>0E53E8B73AB4F54AF837E7DD</string>
-				<string>9844497A6BEF48FE475F3062</string>
-				<string>451FBD88C1C6BABE3B3A86C0</string>
-				<string>5FC002F1B2E76CA0B52C8C2B</string>
-				<string>979C42A4B9589A2201F69408</string>
-				<string>D0263866A3BD992768577A2B</string>
-				<string>272E66A3E2FB8B677A78C025</string>
-				<string>E3C35BC3863D9B23D1AE068A</string>
-				<string>B28954DE797F929F417B6EC0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0A12809D7BCAA6A04980C07E</key>
+		<key>82E6BC6D76D8332E878297B0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>438FB7EE75FD70F5F1CA0EB2</string>
+			<string>248F31B20887635C081D5165</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>85FFE93B7AA9DDF0BAB62738</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>88D674B8A7ADDD3CB4648C52</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B665AD3E4DE709DECA15E775</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -191,85 +1175,205 @@
 				</array>
 			</dict>
 		</dict>
-		<key>0B5B342D27ABD5CB6CDC520C</key>
+		<key>8A6C3C62B9CC4283FEB7D8E5</key>
 		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>9C60B8752DCA08AB37F6B564</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
+			<key>children</key>
 			<array>
-				<string>en</string>
+				<string>FB2981BF82F6C4600D5EF0E1</string>
+				<string>85FFE93B7AA9DDF0BAB62738</string>
 			</array>
-			<key>mainGroup</key>
-			<string>07202805917BCFF596BC32D5</string>
-			<key>productRefGroup</key>
-			<string>9EBB229530A82F1D0EE40D42</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>5A054A7999F794F239C676DB</string>
-				<string>38FF0D22333302ECF5002442</string>
-			</array>
-		</dict>
-		<key>0E53E8B73AB4F54AF837E7DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>120704C8E1320915F1E66C44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Alamofire.swift</string>
-			<key>path</key>
-			<string>Source/Alamofire.swift</string>
+			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>131DAC0336801C9DB66324A3</key>
+		<key>8D57A6871C6AC688CDACD9D9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56EF9DEC71AE14E11BF84998</string>
+				<string>E82E0FBCA438AB53F051C467</string>
+				<string>31647F56C62988FACF52B4F2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8DFCBFDCBCB0F317877DEFAA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91F02AADE9C46A07A5F243F2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FB2981BF82F6C4600D5EF0E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9673A6449FC460B76F60F8DE</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>2924B5DDD190E1AAA1A1DF03</string>
+				<string>88D674B8A7ADDD3CB4648C52</string>
 			</array>
 			<key>isa</key>
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>15EE496D4E7A4CF0F735085C</key>
+		<key>96760E0B93CE66E2FA70FE38</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>06D98CB7271058B523E657B3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods/Pods.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>96B37EFE1EE4ABBD34AFDFB1</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F736D42A2D1557C6320FF7FE</string>
+				<string>14EF2B9D0E4726370392E919</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>99FFB242081911ED17CFAEE7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>32BD091CA9A5B60BF082D1F9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9F542AF5245AC5A72AB49366</string>
+				<string>F229F6B9901450E219F21400</string>
+				<string>53670D22B2CA26C6502066E5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>72E8DCF8D53BBEAAE0579DDB</string>
+				<string>A82A60D586FC9ABF904FD2FF</string>
+				<string>EF13FF43A554074C9742AE0E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>productName</key>
+			<string>Pods</string>
+			<key>productReference</key>
+			<string>72284E3D684E0C817F9C6733</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>9F1CFFD891A0A4FFB420573D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F542AF5245AC5A72AB49366</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>23F6BA48F3FD82B015E9E80D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A5D4F2C24618211A74B04120</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1C3DDBCC76B76A0460560FE8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A6B6896BD10FC3D2DA63CF3C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -286,103 +1390,22 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>16E7C13A37A39B3656979BF6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A138A41D1A7492B2297A3DF5</string>
-				<string>93CFD399410113A149561C52</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1B7BDF873D0D636DE777D4C0</key>
+		<key>A71FD8132CBAE05284BA8AEB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>26C5720CC97F70379A59B379</string>
+			<string>373908667A838209C35D31E3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>26C5720CC97F70379A59B379</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>272E66A3E2FB8B677A78C025</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2924B5DDD190E1AAA1A1DF03</key>
-		<dict>
-			<key>fileRef</key>
-			<string>272E66A3E2FB8B677A78C025</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>2C56FE681C99C3AF8CB7C4F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>451FBD88C1C6BABE3B3A86C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2FD22F039A0B998F149038A7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>26C5720CC97F70379A59B379</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>36F25BEDA5C2720801823879</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0A12809D7BCAA6A04980C07E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>38FF0D22333302ECF5002442</key>
+		<key>A7E6323B8BA5DA3FA2A81B19</key>
 		<dict>
 			<key>buildConfigurationList</key>
-			<string>8C6BBD50DCAF4F8679A5F708</string>
+			<string>3C90EC5C0AEC042C1A43B45F</string>
 			<key>buildPhases</key>
 			<array>
-				<string>16E7C13A37A39B3656979BF6</string>
-				<string>65FA37AA226F997DDC259AEF</string>
-				<string>36F25BEDA5C2720801823879</string>
+				<string>673BAA0B73BF75D7324C0490</string>
+				<string>80E2DC28DA59774481BB8956</string>
+				<string>9673A6449FC460B76F60F8DE</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -395,48 +1418,92 @@
 			<key>productName</key>
 			<string>Pods-Alamofire</string>
 			<key>productReference</key>
-			<string>BDAD7305593FA1098C8AD641</string>
+			<string>BA737948F9B3D6D27B09D668</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>438FB7EE75FD70F5F1CA0EB2</key>
+		<key>A82A60D586FC9ABF904FD2FF</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Alamofire-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-SimpleAlert</string>
+			<key>target</key>
+			<string>3D5466D471838CEC594EABC1</string>
+			<key>targetProxy</key>
+			<string>4003F01428D3F8B7848BBF53</string>
 		</dict>
-		<key>451FBD88C1C6BABE3B3A86C0</key>
+		<key>A9F9E0E5E90B5FEC44E82E28</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>baseConfigurationReference</key>
+			<string>7F59209B95E515A8FBD99AE4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-SwiftyJSON/Pods-SwiftyJSON-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-SwiftyJSON/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-SwiftyJSON/Pods-SwiftyJSON.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SwiftyJSON</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
-		<key>45397A2E8F1F0DE2352660D4</key>
+		<key>B5AEA26C3E542E2C6CF4E4A0</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>6BFBAA9C6FEA88A2FA221564</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>4ABC1E09C2FE1CA711A93122</key>
+		<key>B60F63E0D322B823BEAA9A12</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -449,60 +1516,65 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>52BED5E94AB2F0C530CA7197</key>
+		<key>B665AD3E4DE709DECA15E775</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2FD22F039A0B998F149038A7</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5A054A7999F794F239C676DB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>AEB91E9A45E955460141102C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8747BA74A81A2F1EC463C0D2</string>
-				<string>52BED5E94AB2F0C530CA7197</string>
-				<string>131DAC0336801C9DB66324A3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C7F022459F5450EBF1CB7F62</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>CDC2051BBAB1213AE1EA1EF4</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>5CAC490BDE81544165E3EA81</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>085B62C7A27355D958AEE6CA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Alamofire-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5FC002F1B2E76CA0B52C8C2B</key>
+		<key>BA737948F9B3D6D27B09D668</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Alamofire.framework</string>
+			<key>path</key>
+			<string>Alamofire.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BECFF3E5516400760511E16B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Alamofire.swift</string>
+			<key>path</key>
+			<string>Source/Alamofire.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C2C0AA4F4E3E5D0325E51FDF</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SwiftyJSON.framework</string>
+			<key>path</key>
+			<string>SwiftyJSON.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C8FDAB0A8B9603CC543D3532</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -515,33 +1587,73 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>648B224AF169385F6F7992B6</key>
+		<key>CA17282D132046A5E9185401</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>0B5B342D27ABD5CB6CDC520C</string>
+			<key>fileRef</key>
+			<string>ED406C22B9C93977706782FE</string>
 			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>38FF0D22333302ECF5002442</string>
-			<key>remoteInfo</key>
-			<string>Pods-Alamofire</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>65FA37AA226F997DDC259AEF</key>
+		<key>CF83EB59CF74E392C4C5F13D</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>1B7BDF873D0D636DE777D4C0</string>
+				<string>D8E444E9B363CE7324E45FB1</string>
+				<string>7C5CE335B4576DFAE8D216DD</string>
+				<string>20D2253135DF33BAE3F8FA6A</string>
+				<string>7F59209B95E515A8FBD99AE4</string>
+				<string>1E03BAD5CAD040B314DC8E51</string>
+				<string>777501C263EF1179D68452BB</string>
+				<string>ED406C22B9C93977706782FE</string>
 			</array>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Pods-SwiftyJSON</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6FC06EC611F17A7CBC262C3B</key>
+		<key>D110B55D2816479E5EF06AE8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-Alamofire.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4E310537605E60EE85E850D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>246F5E039E1DDE94AC8BCBDD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D8E444E9B363CE7324E45FB1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB0FC5BA04950FB75343BBB8</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -607,238 +1719,46 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>7247DEDA44BE293058EF674C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Alamofire-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7B0319A186456116E8C2DAF4</key>
+		<key>E82E0FBCA438AB53F051C467</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>AEEF7076E4F0F0F2D4BADD2D</string>
+				<string>245FC31290FE39496F75E676</string>
+				<string>248F31B20887635C081D5165</string>
+				<string>555CB8CCEA05791AD82F9710</string>
+				<string>E88E4828E44DA377D09A7D6F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DAD8D836919BFE2AB5150AD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B28954DE797F929F417B6EC0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods/Pods.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8747BA74A81A2F1EC463C0D2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2C56FE681C99C3AF8CB7C4F2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8C6BBD50DCAF4F8679A5F708</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>03EB1D0A890E98AD7BB69119</string>
-				<string>FE7EED30C10D6FAAD19EAFE4</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9224F75DB746F57302F6CF26</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>SimpleAlert</string>
 			<key>path</key>
-			<string>Pods-Alamofire.modulemap</string>
+			<string>SimpleAlert</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>93CFD399410113A149561C52</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7247DEDA44BE293058EF674C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>979C42A4B9589A2201F69408</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9844497A6BEF48FE475F3062</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C60B8752DCA08AB37F6B564</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0176E1555902E33717615050</string>
-				<string>6FC06EC611F17A7CBC262C3B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9EBB229530A82F1D0EE40D42</key>
+		<key>E88E4828E44DA377D09A7D6F</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>BDAD7305593FA1098C8AD641</string>
-				<string>CDC2051BBAB1213AE1EA1EF4</string>
+				<string>EA85CEC5BBCA3151E441D2E8</string>
+				<string>376D4CF09324E71E39E01C08</string>
+				<string>ECB969195B22150F65E82855</string>
+				<string>E982B40EE76FDAC1BFDD0DDD</string>
+				<string>1C3DDBCC76B76A0460560FE8</string>
+				<string>688135F1D576EABF69E288FC</string>
+				<string>6BFBAA9C6FEA88A2FA221564</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A05816BD259A927333DCB0FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>../Target Support Files/Pods-SimpleAlert</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A138A41D1A7492B2297A3DF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>120704C8E1320915F1E66C44</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A34759D003ED8033E55ACDA5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BB440E0A3110BCE5D2CBD5AD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A68BD6CEA41A095B46DF78BF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Alamofire.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AAA8446541C60D1127F9B0F8</key>
+		<key>E94CEB408BA9C021DF67932A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -851,37 +1771,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AEB91E9A45E955460141102C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E62B5897B6DC5FE44B611835</string>
-				<string>7DAD8D836919BFE2AB5150AD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AEEF7076E4F0F0F2D4BADD2D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>120704C8E1320915F1E66C44</string>
-				<string>C4F97185A3A5A8CC77B25DBE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Alamofire</string>
-			<key>path</key>
-			<string>Alamofire</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B28954DE797F929F417B6EC0</key>
+		<key>E982B40EE76FDAC1BFDD0DDD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -890,188 +1780,91 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Pods.release.xcconfig</string>
+			<string>Pods-SimpleAlert-Private.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BB440E0A3110BCE5D2CBD5AD</key>
+		<key>EA85CEC5BBCA3151E441D2E8</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>26C5720CC97F70379A59B379</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BDAD7305593FA1098C8AD641</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Alamofire.framework</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>Alamofire.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C4F97185A3A5A8CC77B25DBE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4ABC1E09C2FE1CA711A93122</string>
-				<string>9224F75DB746F57302F6CF26</string>
-				<string>A68BD6CEA41A095B46DF78BF</string>
-				<string>DC9635389F85F45533ED9433</string>
-				<string>7247DEDA44BE293058EF674C</string>
-				<string>AAA8446541C60D1127F9B0F8</string>
-				<string>438FB7EE75FD70F5F1CA0EB2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-Alamofire</string>
+			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C7F022459F5450EBF1CB7F62</key>
+		<key>ECB969195B22150F65E82855</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-SimpleAlert.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ED406C22B9C93977706782FE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-SwiftyJSON-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EF13FF43A554074C9742AE0E</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXTargetDependency</string>
 			<key>name</key>
-			<string>Pods-Alamofire</string>
+			<string>Pods-SwiftyJSON</string>
 			<key>target</key>
-			<string>38FF0D22333302ECF5002442</string>
+			<string>FDA7266E79A77EE960542542</string>
 			<key>targetProxy</key>
-			<string>648B224AF169385F6F7992B6</string>
+			<string>60E008AA7EB957336B76DC62</string>
 		</dict>
-		<key>CDC2051BBAB1213AE1EA1EF4</key>
+		<key>EFC309F5502DB0663976A756</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
+			<key>fileRef</key>
+			<string>FB2981BF82F6C4600D5EF0E1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EFCB7B72D802DD545D902039</key>
+		<dict>
+			<key>fileRef</key>
+			<string>555CB8CCEA05791AD82F9710</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F229F6B9901450E219F21400</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>215CE7CDF7F5D8C97A107B50</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods.framework</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>D0263866A3BD992768577A2B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DC9635389F85F45533ED9433</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Alamofire-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E3C35BC3863D9B23D1AE068A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E62B5897B6DC5FE44B611835</key>
+		<key>F736D42A2D1557C6320FF7FE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>E3C35BC3863D9B23D1AE068A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods/Pods.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FE7EED30C10D6FAAD19EAFE4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DC9635389F85F45533ED9433</string>
+			<string>E982B40EE76FDAC1BFDD0DDD</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -1089,9 +1882,9 @@
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Alamofire/Pods-Alamofire-prefix.pch</string>
+				<string>Target Support Files/Pods-SimpleAlert/Pods-SimpleAlert-prefix.pch</string>
 				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Alamofire/Info.plist</string>
+				<string>Target Support Files/Pods-SimpleAlert/Info.plist</string>
 				<key>INSTALL_PATH</key>
 				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
@@ -1103,11 +1896,11 @@
 					<string>@loader_path/Frameworks</string>
 				</array>
 				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Alamofire/Pods-Alamofire.modulemap</string>
+				<string>Target Support Files/Pods-SimpleAlert/Pods-SimpleAlert.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>PRODUCT_NAME</key>
-				<string>Alamofire</string>
+				<string>SimpleAlert</string>
 				<key>SDKROOT</key>
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
@@ -1122,10 +1915,114 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>Debug</string>
+		</dict>
+		<key>FA92363853A1E181171427F5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SimpleAlert.framework</string>
+			<key>path</key>
+			<string>SimpleAlert.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>FB2981BF82F6C4600D5EF0E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>FB45F8F37DE878D6F16D4A86</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B60F63E0D322B823BEAA9A12</string>
+				<string>17D2F065F35434296A0CD3C5</string>
+				<string>16BF98991A8B48922F3AB064</string>
+				<string>180AB45DBA27E232EA795DC1</string>
+				<string>43B5B0180DD1717668414BEE</string>
+				<string>C8FDAB0A8B9603CC543D3532</string>
+				<string>4CA7FD7607DF10DFBFFB746D</string>
+				<string>8DFCBFDCBCB0F317877DEFAA</string>
+				<string>451FB0F03734B7E6D647051D</string>
+				<string>06D98CB7271058B523E657B3</string>
+				<string>9F1CFFD891A0A4FFB420573D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>path</key>
+			<string>Target Support Files/Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FC6B38D206A0249B34B42C8F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8A6C3C62B9CC4283FEB7D8E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDA7266E79A77EE960542542</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0198D4170D3B512F37674A79</string>
+			<key>buildPhases</key>
+			<array>
+				<string>313A47A9A43D6D2D01A7C7F0</string>
+				<string>53807EDCC15DBE3751DDD6E5</string>
+				<string>FFD87095F8C95ACB495B8D32</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-SwiftyJSON</string>
+			<key>productName</key>
+			<string>Pods-SwiftyJSON</string>
+			<key>productReference</key>
+			<string>C2C0AA4F4E3E5D0325E51FDF</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>FFD87095F8C95ACB495B8D32</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CA17282D132046A5E9185401</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
-	<string>0B5B342D27ABD5CB6CDC520C</string>
+	<string>61F5D90E4B8C40A86C53BC3D</string>
 </dict>
 </plist>
