@@ -26,23 +26,23 @@ class MessageViewController: UIViewController {
     
     func refresh(sender:AnyObject)
     {
-        Alamofire.request(.GET, APIModel().APIUrl+"/users/me", parameters: ["userid": base.cacheGetString("userid")])
+        Alamofire.request(.GET, APIModel().APIUrl+"/imessages", parameters: ["userid": base.cacheGetString("userid")])
             .responseJSON { (request, response, data, error) in
-                //println(data)
-                if(error == nil && data != nil) {
+                println(data)
+                /*if(error == nil && data != nil) {
                     var info = data as NSDictionary
-                    //println(info)
-                    self.dataArr = ["firstName", "lastName", "username", "email", "telephone", "gender", "birthday", "headimg"] // it should be removed
+                    println(info)
+                    self.dataArr = ["displayName", "content", "created"] // it should be removed
                     var cnt = 0
                     for item in self.dataArr {
-                        var value = info.objectForKey(item) as String
-                        self.dataArr[cnt] = item+":"+value
+                        //var value = info[0]!.objectForKey(item) as String
+                        //self.dataArr[cnt] = item+":"+value
                         cnt++
                     }
                     //println(self.dataArr)
                     self.tableView.reloadData()
                     self.refreshControl.endRefreshing()
-                }
+                }*/
         }
     }
 
@@ -61,7 +61,7 @@ class MessageViewController: UIViewController {
     @IBAction func send() {
     }
     
-    var dataArr: [String] = ["firstName", "lastName", "username", "email", "telephone", "gender", "birthday", "headimg"]
+    var dataArr: [String] = ["displayName", "content", "created"]
         
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArr.count
