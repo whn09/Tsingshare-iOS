@@ -10,10 +10,15 @@ import UIKit
 
 class WebBrowserViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let url = NSURL(string: "http://wanghenan.com")
+        var request = NSURLRequest(URL: url!)
+        webView.loadRequest(request)
     }
 
     override func didReceiveMemoryWarning() {

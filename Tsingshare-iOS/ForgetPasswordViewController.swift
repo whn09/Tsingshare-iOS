@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ForgetPasswordViewController: UIViewController {
 
@@ -31,12 +32,42 @@ class ForgetPasswordViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBAction func RestorePassword() {
         println("username = \(username.text!)")
-
+        Alamofire.request(.POST, APIModel().APIUrl+"/auth/forgot", parameters: ["username": username.text!])
+            .responseJSON { (request, response, data, error) in
+                if(error == nil && data != nil) {
+                    var info = data as NSDictionary
+                    println(info)
+                    if var _id = info["_id"] as String? { // TODO the condition maybe wrong
+                        // signin success
+                        //println(_id);
+                        println("restore success")
+                        self.performSegueWithIdentifier("restoresuccess", sender: self)
+                    }
+                    else {
+                        // signin fail
+                        var messageString = info["message"] as String!
+                        println(messageString);
+                        //let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
+                        //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                        //self.presentViewController(alert, animated: true, completion: nil)
+                        let alert: UIAlertView = UIAlertView(title: "Restore Fail", message: messageString, delegate: self, cancelButtonTitle: "OK")
+                        alert.show()
+                    }
+                }
+                else {
+                    println("network error")
+                    //let alert = SimpleAlert.Controller(title: "Signin Fail", message: "network error", style: .Alert)
+                    //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                    //self.presentViewController(alert, animated: true, completion: nil)
+                    let alert: UIAlertView = UIAlertView(title: "Restore Fail", message: "network error", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
+                }
+        }
     }
     
     // Auto close keyboard when user click other region except the textfield

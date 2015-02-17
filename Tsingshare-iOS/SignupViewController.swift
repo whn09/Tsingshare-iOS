@@ -66,16 +66,20 @@ class SignupViewController: UIViewController {
                         // signin fail
                         var messageString = info["message"] as String!
                         println(messageString);
-                        let alert = SimpleAlert.Controller(title: "Signup Fail", message: messageString, style: .Alert)
-                        alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
-                        self.presentViewController(alert, animated: true, completion: nil)
+                        //let alert = SimpleAlert.Controller(title: "Signup Fail", message: messageString, style: .Alert)
+                        //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                        //self.presentViewController(alert, animated: true, completion: nil)
+                        let alert: UIAlertView = UIAlertView(title: "Signup Fail", message: messageString, delegate: self, cancelButtonTitle: "OK")
+                        alert.show()
                     }
                 }
                 else {
                     println("network error")
-                    let alert = SimpleAlert.Controller(title: "Signup Fail", message: "network error", style: .Alert)
-                    alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
-                    self.presentViewController(alert, animated: true, completion: nil)
+                    //let alert = SimpleAlert.Controller(title: "Signup Fail", message: "network error", style: .Alert)
+                    //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                    //self.presentViewController(alert, animated: true, completion: nil)
+                    let alert: UIAlertView = UIAlertView(title: "Signup Fail", message: "network error", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
                 }
         }
     }

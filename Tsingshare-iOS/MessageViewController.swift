@@ -9,11 +9,7 @@
 import UIKit
 import Alamofire
 
-class MessageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    private var dataSource: Dictionary<String, [String]>? //定义表格的数据源
-    private var keyArray: [String]?
-    private let cellIdef = "zcell"
+class MessageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +26,11 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
 
     @IBOutlet weak var content: UITextField!
     @IBOutlet var messageList: [UITableView]!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBAction func send() {
     }
     
     func list() {
-        
         println(base.cacheGetString("userid"))
         println(base.cacheGetString("displayName"))
         println(base.cacheGetString("username"))
@@ -47,61 +43,80 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
 //                }
 //        }
         
-        //初始化数据
-        demoData()
+    }
+    
+    // Auto close keyboard when user click other region except the textfield
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        content.resignFirstResponder()
+    }
+    
+    weak var activeTextField: UITextField?
+    
+    //MARK: - Keyboard Management Methods
+    
+    // Call this method somewhere in your view controller setup code.
+    func registerForKeyboardNotifications() {
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self,
+            selector: "keyboardWillBeShown:",
+            name: UIKeyboardWillShowNotification,
+            object: nil)
+        notificationCenter.addObserver(self,
+            selector: "keyboardWillBeHidden:",
+            name: UIKeyboardWillHideNotification,
+            object: nil)
+    }
+    
+    // Called when the UIKeyboardDidShowNotification is sent.
+    func keyboardWillBeShown(sender: NSNotification) {
+        let info: NSDictionary = sender.userInfo!
+        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as NSValue
+        let keyboardSize: CGSize = value.CGRectValue().size
+        let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
         
-        var frame = self.view.bounds
-        frame.origin.y += 20
-        frame.size.height -= 20
-        
-        //初始化表格
-        var tableView = UITableView(frame: frame, style: UITableViewStyle.Plain)
-        //设置重用标志
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdef)
-        tableView.tableFooterView = UIView()
-        tableView.dataSource = self
-        tableView.delegate = self
-        //self.view.addSubview(tableView)
+        // If active text field is hidden by keyboard, scroll it so it's visible
+        // Your app might not need or want this behavior.
+        var aRect: CGRect = self.view.frame
+        aRect.size.height -= keyboardSize.height
+        //let activeTextFieldRect: CGRect? = activeTextField?.frame
+        let activeTextFieldRect: CGRect? = content?.frame
+        let activeTextFieldOrigin: CGPoint? = activeTextFieldRect?.origin
+        if (!CGRectContainsPoint(aRect, activeTextFieldOrigin!)) {
+            scrollView.scrollRectToVisible(activeTextFieldRect!, animated:true)
+        }
     }
     
-    private func demoData() {
-        dataSource = ["国家": ["中国", "美国", "法国", "德国", "意大利", "英国", "俄罗斯"],
-            "种族": ["白种人", "黄种人", "黑种人"], "肤色": ["白种人", "黄种人", "黑种人", "红色"]
-        ]
-        keyArray = ["国家", "种族", "肤色"]
+    // Called when the UIKeyboardWillHideNotification is sent
+    func keyboardWillBeHidden(sender: NSNotification) {
+        let contentInsets: UIEdgeInsets = UIEdgeInsetsZero
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
     }
     
-    // MARK: - UITableViewDataSource
+    //MARK: - UITextField Delegate Methods
     
-    //设置表格的组数
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return keyArray!.count
+    func textFieldDidBeginEditing(textField: UITextField!) {
+        //activeTextField = textField
+        content = textField
+        scrollView.scrollEnabled = true
     }
     
-    //设置表格每组的行数
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var array = dataSource![keyArray![section]]
-        return array!.count
+    func textFieldDidEndEditing(textField: UITextField!) {
+        //activeTextField = nil
+        content = nil
+        scrollView.scrollEnabled = false
     }
     
-    //设置表格的内容
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdef, forIndexPath: indexPath) as UITableViewCell
-        var array = dataSource![keyArray![indexPath.section]]
-        cell.textLabel.text = array![indexPath.row]
-        return cell
-        
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.registerForKeyboardNotifications()
     }
     
-    //设置每组的标题
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return keyArray![section]
-    }
-    
-    //MARK: - UITableViewDelegate
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func viewDidDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 }
 
