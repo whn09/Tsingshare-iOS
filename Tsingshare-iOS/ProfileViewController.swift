@@ -59,13 +59,6 @@ class ProfileViewController: UIViewController, UITableViewDelegate {
     var dataArr: [String] = ["firstName", "lastName", "username", "email", "telephone", "gender", "birthday", "headimg"]
     
     var base = BaseClass()
-    
-    func list() {
-    //初始化数据
-    //demoData()
-        println(base.cacheGetString("username"))
-        
-    }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArr.count
