@@ -11,15 +11,28 @@ import Alamofire
 
 class MessageViewController: UIViewController {
     
+    var refreshControl:UIRefreshControl!  // An optional variable
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refersh")
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl)
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    func refresh(sender:AnyObject)
+    {
         Alamofire.request(.GET, APIModel().APIUrl+"/users/me", parameters: ["userid": base.cacheGetString("userid")])
             .responseJSON { (request, response, data, error) in
                 //println(data)
                 if(error == nil && data != nil) {
                     var info = data as NSDictionary
                     //println(info)
+                    self.dataArr = ["firstName", "lastName", "username", "email", "telephone", "gender", "birthday", "headimg"] // it should be removed
                     var cnt = 0
                     for item in self.dataArr {
                         var value = info.objectForKey(item) as String
@@ -28,10 +41,9 @@ class MessageViewController: UIViewController {
                     }
                     //println(self.dataArr)
                     self.tableView.reloadData()
+                    self.refreshControl.endRefreshing()
                 }
         }
-        
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     override func didReceiveMemoryWarning() {
