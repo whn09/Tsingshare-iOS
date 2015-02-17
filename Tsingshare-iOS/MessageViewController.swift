@@ -14,7 +14,24 @@ class MessageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        list()
+        Alamofire.request(.GET, APIModel().APIUrl+"/users/me", parameters: ["userid": base.cacheGetString("userid")])
+            .responseJSON { (request, response, data, error) in
+                //println(data)
+                if(error == nil && data != nil) {
+                    var info = data as NSDictionary
+                    //println(info)
+                    var cnt = 0
+                    for item in self.dataArr {
+                        var value = info.objectForKey(item) as String
+                        self.dataArr[cnt] = item+":"+value
+                        cnt++
+                    }
+                    //println(self.dataArr)
+                    self.tableView.reloadData()
+                }
+        }
+        
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,9 +42,25 @@ class MessageViewController: UIViewController {
     var base = BaseClass()
 
     @IBOutlet weak var content: UITextField!
-    @IBOutlet var messageList: [UITableView]!
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     @IBAction func send() {
+    }
+    
+    var dataArr: [String] = ["firstName", "lastName", "username", "email", "telephone", "gender", "birthday", "headimg"]
+        
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataArr.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        
+        cell.textLabel.text = self.dataArr[indexPath.row] as String
+        
+        return cell
     }
     
     func list() {

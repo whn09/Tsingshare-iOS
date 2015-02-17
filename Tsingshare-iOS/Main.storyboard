@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qOR-Bx-Vkl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gXP-zX-Tzu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -48,12 +48,24 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-iw-YSX">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="472"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="9pv-A4-QxB" id="DNk-aT-cEz"/>
+                                            <outlet property="delegate" destination="9pv-A4-QxB" id="rhM-Vl-A2R"/>
+                                        </connections>
+                                    </tableView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="qpg-iw-YSX" firstAttribute="leading" secondItem="BeP-Ae-Zho" secondAttribute="leading" id="783-ul-2NJ"/>
                                     <constraint firstItem="BdC-ON-YRU" firstAttribute="bottom" secondItem="BeP-Ae-Zho" secondAttribute="bottomMargin" id="DSS-JD-8Gq"/>
                                     <constraint firstItem="CIN-sH-3lO" firstAttribute="top" secondItem="BeP-Ae-Zho" secondAttribute="top" constant="474" id="H65-L4-eLW"/>
                                     <constraint firstAttribute="bottom" secondItem="z86-Nt-9Wo" secondAttribute="bottom" constant="13" id="Ocy-xK-PVo"/>
+                                    <constraint firstAttribute="trailing" secondItem="qpg-iw-YSX" secondAttribute="trailing" id="Oq1-Dh-kxj"/>
+                                    <constraint firstItem="qpg-iw-YSX" firstAttribute="top" secondItem="BeP-Ae-Zho" secondAttribute="top" id="P7y-If-5z1"/>
                                     <constraint firstItem="CIN-sH-3lO" firstAttribute="baseline" secondItem="BdC-ON-YRU" secondAttribute="baseline" id="Pse-Mm-Dp7"/>
+                                    <constraint firstItem="CIN-sH-3lO" firstAttribute="top" secondItem="qpg-iw-YSX" secondAttribute="bottom" constant="2" id="QQA-g2-dye"/>
                                     <constraint firstItem="CIN-sH-3lO" firstAttribute="leading" secondItem="BeP-Ae-Zho" secondAttribute="leadingMargin" id="QbX-ZK-GTm"/>
                                     <constraint firstItem="BdC-ON-YRU" firstAttribute="trailing" secondItem="BeP-Ae-Zho" secondAttribute="trailingMargin" id="R4V-lj-I3p"/>
                                     <constraint firstItem="BdC-ON-YRU" firstAttribute="leading" secondItem="z86-Nt-9Wo" secondAttribute="trailing" constant="8" symbolic="YES" id="bIf-8F-TYz"/>
@@ -72,7 +84,8 @@
                     <tabBarItem key="tabBarItem" title="Message" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="content" destination="z86-Nt-9Wo" id="XSh-G9-lLn"/>
-                        <outlet property="scrollView" destination="BeP-Ae-Zho" id="J5W-x7-D2x"/>
+                        <outlet property="scrollView" destination="BeP-Ae-Zho" id="dpu-bU-QT5"/>
+                        <outlet property="tableView" destination="qpg-iw-YSX" id="LSS-fF-cLa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
