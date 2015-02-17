@@ -37,4 +37,9 @@ class ForgetPasswordViewController: UIViewController {
         println("username = \(username.text!)")
 
     }
+    
+    // Auto close keyboard when user click other region except the textfield
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        username.resignFirstResponder()
+    }
 }

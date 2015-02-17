@@ -59,7 +59,7 @@ class SignupViewController: UIViewController {
                         // signin success
                         //println(_id);
                         println("signup success")
-                        self.performSegueWithIdentifier("signupsuccess", sender: self)
+                        //self.performSegueWithIdentifier("signupsuccess", sender: self)
                     }
                     else {
                         // signin fail
@@ -77,6 +77,15 @@ class SignupViewController: UIViewController {
                     self.presentViewController(alert, animated: true, completion: nil)
                 }
         }
-
+    }
+    
+    // Auto close keyboard when user click other region except the textfield
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        firstname.resignFirstResponder()
+        lastname.resignFirstResponder()
+        email.resignFirstResponder()
+        telephone.resignFirstResponder()
+        username.resignFirstResponder()
+        password.resignFirstResponder()
     }
 }

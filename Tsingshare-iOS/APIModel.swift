@@ -10,4 +10,5 @@ import Foundation
 
 class APIModel {
     var APIUrl = "http://192.168.1.106:3000"
+    //var APIUrl = "http://182.92.114.132:3000"
 }

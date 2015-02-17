@@ -235,16 +235,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyl-RG-cMR">
-                                <rect key="frame" x="16" y="302" width="568" height="30"/>
-                                <state key="normal" title="Sign in">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Signin" destination="gXP-zX-Tzu" eventType="touchUpInside" id="ax3-qz-YVj"/>
-                                    <segue destination="49e-Tb-3d3" kind="presentation" identifier="signinsuccess" id="yWB-rN-9j0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izn-Ou-eml">
                                 <rect key="frame" x="16" y="333" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -273,6 +263,15 @@
                                 </state>
                                 <connections>
                                     <segue destination="ZBe-Dj-2o6" kind="show" id="gfy-xN-Vke"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyl-RG-cMR">
+                                <rect key="frame" x="16" y="302" width="568" height="30"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Signin" destination="gXP-zX-Tzu" eventType="touchUpInside" id="ax3-qz-YVj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -315,6 +314,7 @@
                     <connections>
                         <outlet property="password" destination="etG-GH-MpC" id="z7Z-kF-5Gx"/>
                         <outlet property="username" destination="ZOQ-47-S66" id="9aI-LC-h7d"/>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="signinsuccess" id="r3S-Vl-5hL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8GM-Dx-dIU" sceneMemberID="firstResponder"/>
@@ -354,7 +354,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Signup" destination="a4n-5M-5Xa" eventType="touchUpInside" id="yQi-yr-NRI"/>
-                                    <segue destination="49e-Tb-3d3" kind="presentation" identifier="signupsuccess" id="Gbm-Dv-fG2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5ic-mU-W87">
@@ -711,7 +710,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Al4-ag-lfT"/>
-        <segue reference="JjU-9E-LUI"/>
-        <segue reference="Gbm-Dv-fG2"/>
+        <segue reference="fEJ-r2-xqE"/>
     </inferredMetricsTieBreakers>
 </document>

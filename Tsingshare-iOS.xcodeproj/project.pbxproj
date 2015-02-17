@@ -19,6 +19,7 @@
 		9EB52FF81A8F3963004AB9F3 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */; };
 		9EBF8E881A92154500689404 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF8E871A92154500689404 /* APIModel.swift */; };
 		9EBF8E8C1A9244BB00689404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF8E8B1A9244BB00689404 /* Main.storyboard */; };
+		9EBF8E8E1A92CA0300689404 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF8E8D1A92CA0300689404 /* BaseClass.swift */; };
 		9EE6C1291A9203AD00D05992 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6C1281A9203AD00D05992 /* UserModel.swift */; };
 		9EF1CA391A90E2EF00BB9CEC /* WebBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1CA381A90E2EF00BB9CEC /* WebBrowserViewController.swift */; };
 		AF92247D258530A2901C741D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06C9E870C7DFFAB4EB6FAC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -52,6 +53,7 @@
 		9EB52FF71A8F3963004AB9F3 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		9EBF8E871A92154500689404 /* APIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
 		9EBF8E8B1A9244BB00689404 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9EBF8E8D1A92CA0300689404 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		9EE5F91A1A92088A009A86F6 /* libPods-Alamofire.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Alamofire.a"; path = "Pods/build/Debug-iphoneos/libPods-Alamofire.a"; sourceTree = "<group>"; };
 		9EE5F91D1A9208C2009A86F6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		9EE5F91E1A920912009A86F6 /* libPods-Alamofire.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Alamofire.a"; path = "Pods/build/Debug-iphoneos/libPods-Alamofire.a"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				9EB146E11A8E225300B54F14 /* AppDelegate.swift */,
 				9EE6C1281A9203AD00D05992 /* UserModel.swift */,
+				9EBF8E8D1A92CA0300689404 /* BaseClass.swift */,
 				9EBF8E8B1A9244BB00689404 /* Main.storyboard */,
 				9EBF8E871A92154500689404 /* APIModel.swift */,
 				9EB146E31A8E225300B54F14 /* MessageViewController.swift */,
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EBF8E8E1A92CA0300689404 /* BaseClass.swift in Sources */,
 				9EB146E61A8E225300B54F14 /* DiscoveryViewController.swift in Sources */,
 				9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */,
 				9EF1CA391A90E2EF00BB9CEC /* WebBrowserViewController.swift in Sources */,

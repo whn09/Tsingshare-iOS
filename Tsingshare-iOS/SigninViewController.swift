@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SimpleAlert
+import Foundation
 
 class SigninViewController: UIViewController {
 
@@ -34,6 +35,8 @@ class SigninViewController: UIViewController {
     }
     */
 
+    var base = BaseClass()
+    
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var password: UITextField!
@@ -51,24 +54,39 @@ class SigninViewController: UIViewController {
                         // signin success
                         //println(_id);
                         println("signin success")
+                        self.base.cacheSetString("userid", value: _id)
+                        self.base.cacheSetString("displayName", value: info["displayName"] as String)
+                        self.base.cacheSetString("username", value: info["username"] as String)
+                        self.base.cacheSetString("headimg", value: APIModel().APIUrl+"/"+(info["headimg"] as String))
                         self.performSegueWithIdentifier("signinsuccess", sender: self)
+                        //var messageView = MessageViewController()
+                        //self.presentViewController(messageView, animated: true, completion: nil)
                     }
                     else {
                         // signin fail
                         var messageString = info["message"] as String!
                         println(messageString);
-                        let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
-                        alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
-                        self.presentViewController(alert, animated: true, completion: nil)
+                        //let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
+                        //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                        //self.presentViewController(alert, animated: true, completion: nil)
+                        let alert: UIAlertView = UIAlertView(title: "Signin Fail", message: messageString, delegate: self, cancelButtonTitle: "OK")
+                        alert.show()
                     }
                 }
                 else {
                     println("network error")
-                    let alert = SimpleAlert.Controller(title: "Signin Fail", message: "network error", style: .Alert)
-                    alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
-                    self.presentViewController(alert, animated: true, completion: nil)
+                    //let alert = SimpleAlert.Controller(title: "Signin Fail", message: "network error", style: .Alert)
+                    //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
+                    //self.presentViewController(alert, animated: true, completion: nil)
+                    let alert: UIAlertView = UIAlertView(title: "Signin Fail", message: "network error", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
                 }
         }
-
+    }
+    
+    // Auto close keyboard when user click other region except the textfield
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        username.resignFirstResponder()
+        password.resignFirstResponder()
     }
 }
