@@ -23,6 +23,7 @@
 		9EBF8E901A93706A00689404 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF8E8F1A93706A00689404 /* ProfileViewController.swift */; };
 		9EE6C1291A9203AD00D05992 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE6C1281A9203AD00D05992 /* UserModel.swift */; };
 		9EF1CA391A90E2EF00BB9CEC /* WebBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF1CA381A90E2EF00BB9CEC /* WebBrowserViewController.swift */; };
+		9EF2DBF61A98C1FC00FF3205 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2DBF51A98C1FC00FF3205 /* Alamofire-SwiftyJSON.swift */; };
 		AF92247D258530A2901C741D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06C9E870C7DFFAB4EB6FAC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		9EE5F9201A920927009A86F6 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		9EE6C1281A9203AD00D05992 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		9EF1CA381A90E2EF00BB9CEC /* WebBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebBrowserViewController.swift; sourceTree = "<group>"; };
+		9EF2DBF51A98C1FC00FF3205 /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
 		A8D2361ADC1C6139D46EC174 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EC06C9E870C7DFFAB4EB6FAC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			children = (
 				9EB146E11A8E225300B54F14 /* AppDelegate.swift */,
 				9EE6C1281A9203AD00D05992 /* UserModel.swift */,
+				9EF2DBF51A98C1FC00FF3205 /* Alamofire-SwiftyJSON.swift */,
 				9EBF8E8D1A92CA0300689404 /* BaseClass.swift */,
 				9EBF8E8B1A9244BB00689404 /* Main.storyboard */,
 				9EBF8E871A92154500689404 /* APIModel.swift */,
@@ -328,6 +331,7 @@
 				9EB146E61A8E225300B54F14 /* DiscoveryViewController.swift in Sources */,
 				9EB146E21A8E225300B54F14 /* AppDelegate.swift in Sources */,
 				9EF1CA391A90E2EF00BB9CEC /* WebBrowserViewController.swift in Sources */,
+				9EF2DBF61A98C1FC00FF3205 /* Alamofire-SwiftyJSON.swift in Sources */,
 				9E1D88E21A8E25D3004689DA /* MeViewController.swift in Sources */,
 				9EBF8E881A92154500689404 /* APIModel.swift in Sources */,
 				9EBF8E901A93706A00689404 /* ProfileViewController.swift in Sources */,
