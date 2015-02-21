@@ -23,27 +23,36 @@ class MessageViewController: UIViewController {
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl)
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        refresh(self.refreshControl)
     }
     
-    func refresh(sender:AnyObject)
+    func refresh(Sender: AnyObject)
     {
         Alamofire.request(.GET, APIModel().APIUrl+"/imessages", parameters: ["userid": base.cacheGetString("userid")])
             .responseSwiftyJSON { (request, response, data, error) in
-                println(data)
+                //println(data)
                 if(error == nil && data != nil) {
-                    self.dataArr = ["content", "created"] // it should be removed
-                    var tmpArr = self.dataArr
-                    var cnt = 0
-                    /*for i in info.count {
-                        println(data)
-                        for item in tmpArr {
-                            var value = info[0]!.objectForKey(item) as String
-                            self.dataArr[cnt] = item+":"+value
-                            cnt++
+                    //println(data.count)
+                    var tmpArr: [String] = []
+                    for var i=0;i<data.count;i++ {
+                        //println(i)
+                        if let content = data[i]["content"].string{
+                            if let created = data[i]["created"].string{
+                                //println(content)
+                                //println(created)
+                                tmpArr.append(content+" created "+created)
+                            }
+                            else {
+                                println(data[i]["created"])
+                            }
                         }
-                    }*/
+                        else {
+                            println(data[i]["content"])
+                        }
+                    }
+                    self.dataArr = tmpArr
                     //println(self.dataArr)
-                    //self.tableView.reloadData()
+                    self.tableView.reloadData()
                     self.refreshControl.endRefreshing()
                 }
         }
@@ -64,7 +73,7 @@ class MessageViewController: UIViewController {
     @IBAction func send() {
     }
     
-    var dataArr: [String] = ["content", "created"]
+    var dataArr: [String] = []
         
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArr.count
@@ -76,21 +85,6 @@ class MessageViewController: UIViewController {
         cell.textLabel.text = self.dataArr[indexPath.row] as String
         
         return cell
-    }
-    
-    func list() {
-        println(base.cacheGetString("userid"))
-        println(base.cacheGetString("displayName"))
-        println(base.cacheGetString("username"))
-        println(base.cacheGetString("headimg"))
-//        Alamofire.request(.GET, APIModel().APIUrl+"/imessages")
-//            .responseJSON { (request, response, data, error) in
-//                if(error == nil && data != nil) {
-//                    var info = data as NSDictionary
-//                    println(info)
-//                }
-//        }
-        
     }
     
     // Auto close keyboard when user click other region except the textfield
