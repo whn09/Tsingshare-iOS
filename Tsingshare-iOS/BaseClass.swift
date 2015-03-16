@@ -14,6 +14,7 @@ class BaseClass{
     func cacheSetString(key: String,value: String){
         var userInfo = NSUserDefaults()
         userInfo.setValue(value, forKey: key)
+        userInfo.synchronize()
     }
     
     func cacheGetString(key: String) -> String{

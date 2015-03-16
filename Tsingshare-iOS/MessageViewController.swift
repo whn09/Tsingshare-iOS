@@ -30,6 +30,7 @@ class MessageViewController: UIViewController {
     {
         Alamofire.request(.GET, APIModel().APIUrl+"/imessages", parameters: ["userid": base.cacheGetString("userid")])
             .responseSwiftyJSON { (request, response, data, error) in
+                //println(self.base.cacheGetString("userid"))
                 //println(data)
                 if(error == nil && data != nil) {
                     //println(data.count)
@@ -82,7 +83,7 @@ class MessageViewController: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel.text = self.dataArr[indexPath.row] as String
+        cell.textLabel?.text = self.dataArr[indexPath.row] as String
         
         return cell
     }

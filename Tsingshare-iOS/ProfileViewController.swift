@@ -67,7 +67,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel.text = self.dataArr[indexPath.row] as String
+        cell.textLabel?.text = self.dataArr[indexPath.row] as String
         
         return cell
     }

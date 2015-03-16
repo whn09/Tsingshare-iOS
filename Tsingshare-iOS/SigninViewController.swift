@@ -14,9 +14,19 @@ import Foundation
 class SigninViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool){
+        super.viewDidAppear(animated)
+        
+        if(base.cacheGetString("userid") != "") {
+            println("signinsuccess")
+            self.performSegueWithIdentifier("signinsuccess", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +54,7 @@ class SigninViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBAction func Signin() {
-        println("username = \(username.text!) and password = \(password.text!)")
+        //println("username = \(username.text!) and password = \(password.text!)")
         //var userModel = UserModel()
         //userModel.signin(username.text!, password: password.text!)
         Alamofire.request(.POST, APIModel().APIUrl+"/auth/signin", parameters: ["username": username.text!, "password": password.text!])
