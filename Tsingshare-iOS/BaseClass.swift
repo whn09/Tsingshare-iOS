@@ -20,7 +20,10 @@ class BaseClass{
     func cacheGetString(key: String) -> String{
         var userInfo = NSUserDefaults()
         var tmpSign = userInfo.stringForKey(key)
-        return tmpSign!
+        if(tmpSign != nil) {
+            return tmpSign!
+        }
+        return "";
     }
     
 }

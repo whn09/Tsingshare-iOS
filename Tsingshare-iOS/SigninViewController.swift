@@ -61,7 +61,7 @@ class SigninViewController: UIViewController {
             .responseJSON { (request, response, data, error) in
                 if(error == nil && data != nil) {
                     var info = data as NSDictionary
-                    //println(info)
+                    println(info)
                     if var _id = info["_id"] as String? {
                         // signin success
                         //println(_id);
@@ -70,6 +70,7 @@ class SigninViewController: UIViewController {
                         self.base.cacheSetString("displayName", value: info["displayName"] as String)
                         self.base.cacheSetString("username", value: info["username"] as String)
                         self.base.cacheSetString("headimg", value: APIModel().APIUrl+"/"+(info["headimg"] as String))
+                        self.base.cacheSetString("loverid", value: info["lover"] as String)
                         self.performSegueWithIdentifier("signinsuccess", sender: self)
                         //var messageView = MessageViewController()
                         //self.presentViewController(messageView, animated: true, completion: nil)
