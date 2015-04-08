@@ -1,0 +1,6 @@
+framework module TPKeyboardAvoiding {
+  umbrella header "Pods-TPKeyboardAvoiding-umbrella.h"
+
+  export *
+  module * { export * }
+}

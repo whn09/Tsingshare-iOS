@@ -13,6 +13,10 @@ import SwiftyJSON
 class MessageViewController: UIViewController {
     
     var refreshControl:UIRefreshControl!  // An optional variable
+    var currentPage = 1
+    var totalPage = 1
+    var pageSize = 10
+    var endPage = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +27,34 @@ class MessageViewController: UIViewController {
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(refreshControl)
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        refresh(self.refreshControl)
+        Alamofire.request(.GET, APIModel().APIUrl+"/imessages/count", parameters: ["userid": base.cacheGetString("userid")])
+            .responseSwiftyJSON { (request, response, data, error) in
+                println(data)
+                if(error == nil && data != nil) {
+                    if let totalCount = data.int{
+                        if(totalCount % self.pageSize == 0) {
+                            self.totalPage = totalCount / self.pageSize
+                        }
+                        else {
+                            self.totalPage = totalCount / self.pageSize + 1
+                        }
+                        self.currentPage = self.totalPage
+                        self.endPage = self.totalPage
+                        self.refresh(self.refreshControl)
+                    }
+                }
+        }
     }
     
     func refresh(Sender: AnyObject)
     {
-        Alamofire.request(.GET, APIModel().APIUrl+"/imessages", parameters: ["userid": base.cacheGetString("userid")])
+        println("refresh")
+        println(self.currentPage)
+        if(self.currentPage == 0) {
+            self.refreshControl.endRefreshing()
+            return
+        }
+        Alamofire.request(.GET, APIModel().APIUrl+"/imessages", parameters: ["userid": base.cacheGetString("userid"), "page": self.currentPage, "pagesize": self.pageSize])
             .responseSwiftyJSON { (request, response, data, error) in
                 //println(self.base.cacheGetString("userid"))
                 //println(data)
@@ -38,21 +64,16 @@ class MessageViewController: UIViewController {
                     for var i=0;i<data.count;i++ {
                         //println(i)
                         if let content = data[i]["content"].string{
-                            if let created = data[i]["created"].string{
-                                //println(content)
-                                //println(created)
-                                tmpArr.append(content+" created "+created)
-                            }
-                            else {
-                                println(data[i]["created"])
-                            }
-                        }
-                        else {
-                            println(data[i]["content"])
+                            //println(content)
+                            //println(created)
+                            tmpArr.append(content)
                         }
                     }
-                    self.dataArr = tmpArr
+                    self.dataArr = tmpArr+self.dataArr
                     //println(self.dataArr)
+                    if (self.currentPage >= 1) {
+                        self.currentPage--;
+                    }
                     self.tableView.reloadData()
                     self.refreshControl.endRefreshing()
                 }
@@ -72,23 +93,27 @@ class MessageViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func send() {
-        println("content = \(content.text!)")
+        //println("content = \(content.text!)")
+        if(content.text! == "") {
+            return
+        }
         Alamofire.request(.POST, APIModel().APIUrl+"/imessages", parameters: ["content": content.text!, "userid": base.cacheGetString("userid"), "touserid": base.cacheGetString("loverid")])
             .responseJSON { (request, response, data, error) in
                 if(error == nil && data != nil) {
                     var info = data as NSDictionary
-                    //println(info)
+                    println(info)
                     if var _id = info["_id"] as String? {
                         // signin success
                         //println(_id);
-                        println("signin success")
-                        self.base.cacheSetString("userid", value: _id)
-                        self.base.cacheSetString("displayName", value: info["displayName"] as String)
-                        self.base.cacheSetString("username", value: info["username"] as String)
-                        self.base.cacheSetString("headimg", value: APIModel().APIUrl+"/"+(info["headimg"] as String))
-                        self.performSegueWithIdentifier("signinsuccess", sender: self)
-                        //var messageView = MessageViewController()
-                        //self.presentViewController(messageView, animated: true, completion: nil)
+                        if var content = info["content"] as String? {
+                            self.content.text = nil
+                            self.dataArr.append(content)
+                            self.tableView.reloadData()
+                            if(self.dataArr.count >= self.pageSize) {
+                                self.tableView.setContentOffset(CGPointMake(0, self.tableView.contentSize.height - self.tableView.frame.size.height), animated: true) // 跳转到列表最下方
+                            }
+                        }
+                        //println("send success")
                     }
                     else {
                         // signin fail
@@ -97,7 +122,7 @@ class MessageViewController: UIViewController {
                         //let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
                         //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
                         //self.presentViewController(alert, animated: true, completion: nil)
-                        let alert: UIAlertView = UIAlertView(title: "Signin Fail", message: messageString, delegate: self, cancelButtonTitle: "OK")
+                        let alert: UIAlertView = UIAlertView(title: "Send Fail", message: messageString, delegate: self, cancelButtonTitle: "OK")
                         alert.show()
                     }
                 }
@@ -106,7 +131,7 @@ class MessageViewController: UIViewController {
                     //let alert = SimpleAlert.Controller(title: "Signin Fail", message: "network error", style: .Alert)
                     //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
                     //self.presentViewController(alert, animated: true, completion: nil)
-                    let alert: UIAlertView = UIAlertView(title: "Signin Fail", message: "network error", delegate: self, cancelButtonTitle: "OK")
+                    let alert: UIAlertView = UIAlertView(title: "Send Fail", message: "network error", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                 }
         }

@@ -51,9 +51,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Alamofire.framework'
   install_framework 'SimpleAlert.framework'
   install_framework 'SwiftyJSON.framework'
+  install_framework 'TPKeyboardAvoiding.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Alamofire.framework'
   install_framework 'SimpleAlert.framework'
   install_framework 'SwiftyJSON.framework'
+  install_framework 'TPKeyboardAvoiding.framework'
 fi
