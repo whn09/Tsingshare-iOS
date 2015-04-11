@@ -28,9 +28,9 @@ class UserModel: APIModel {
         Alamofire.request(.POST, APIUrl+"/auth/signin", parameters: ["username": username, "password": password])
             .responseJSON { (request, response, data, error) in
                 if(error == nil && data != nil) {
-                    var info = data as NSDictionary
+                    var info = data as! NSDictionary
                     //println(info)
-                    if var _id = info["_id"] as String? {
+                    if var _id = info["_id"] as! String? {
                         // signin success
                         //println(_id);
                         self.user = info
@@ -38,7 +38,7 @@ class UserModel: APIModel {
                     }
                     else {
                         // signin fail
-                        var messageString = info["message"] as String!
+                        var messageString = info["message"] as! String!
                         //println(messageString);
                         self.user = NSDictionary()
                         self.message = messageString

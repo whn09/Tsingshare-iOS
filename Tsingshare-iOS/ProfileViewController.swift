@@ -22,11 +22,11 @@ class ProfileViewController: UIViewController, UITableViewDelegate {
             .responseJSON { (request, response, data, error) in
                 //println(data)
                 if(error == nil && data != nil) {
-                    var info = data as NSDictionary
+                    var info = data as! NSDictionary
                     //println(info)
                     var cnt = 0
                     for item in self.dataArr {
-                        var value = info.objectForKey(item) as String
+                        var value = info.objectForKey(item) as! String
                         self.dataArr[cnt] = item+":"+value
                         cnt++
                     }
@@ -65,7 +65,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel?.text = self.dataArr[indexPath.row] as String
         

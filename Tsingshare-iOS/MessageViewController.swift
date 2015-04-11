@@ -28,9 +28,10 @@ class MessageViewController: UIViewController {
         self.tableView.addSubview(refreshControl)
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         Alamofire.request(.GET, APIModel().APIUrl+"/imessages/count", parameters: ["userid": base.cacheGetString("userid")])
-            .responseSwiftyJSON { (request, response, data, error) in
-                println(data)
+            .responseJSON { (request, response, data, error) in
+                //println(data)
                 if(error == nil && data != nil) {
+                    var data = JSON(data!)
                     if let totalCount = data.int{
                         if(totalCount % self.pageSize == 0) {
                             self.totalPage = totalCount / self.pageSize
@@ -55,11 +56,12 @@ class MessageViewController: UIViewController {
             return
         }
         Alamofire.request(.GET, APIModel().APIUrl+"/imessages", parameters: ["userid": base.cacheGetString("userid"), "page": self.currentPage, "pagesize": self.pageSize])
-            .responseSwiftyJSON { (request, response, data, error) in
+            .responseJSON { (request, response, data, error) in
                 //println(self.base.cacheGetString("userid"))
                 //println(data)
                 if(error == nil && data != nil) {
                     //println(data.count)
+                    var data = JSON(data!)
                     var tmpArr: [String] = []
                     for var i=0;i<data.count;i++ {
                         //println(i)
@@ -100,12 +102,12 @@ class MessageViewController: UIViewController {
         Alamofire.request(.POST, APIModel().APIUrl+"/imessages", parameters: ["content": content.text!, "userid": base.cacheGetString("userid"), "touserid": base.cacheGetString("loverid")])
             .responseJSON { (request, response, data, error) in
                 if(error == nil && data != nil) {
-                    var info = data as NSDictionary
+                    var info = data as! NSDictionary
                     println(info)
-                    if var _id = info["_id"] as String? {
+                    if var _id = info["_id"] as! String? {
                         // signin success
                         //println(_id);
-                        if var content = info["content"] as String? {
+                        if var content = info["content"] as! String? {
                             self.content.text = nil
                             self.dataArr.append(content)
                             self.tableView.reloadData()
@@ -117,7 +119,7 @@ class MessageViewController: UIViewController {
                     }
                     else {
                         // signin fail
-                        var messageString = info["message"] as String!
+                        var messageString = info["message"] as! String!
                         println(messageString);
                         //let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
                         //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
@@ -144,7 +146,7 @@ class MessageViewController: UIViewController {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
         
         cell.textLabel?.text = self.dataArr[indexPath.row] as String
         
@@ -152,7 +154,7 @@ class MessageViewController: UIViewController {
     }
     
     // Auto close keyboard when user click other region except the textfield
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         content.resignFirstResponder()
     }
     
@@ -176,7 +178,7 @@ class MessageViewController: UIViewController {
     // Called when the UIKeyboardDidShowNotification is sent.
     func keyboardWillBeShown(sender: NSNotification) {
         let info: NSDictionary = sender.userInfo!
-        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as NSValue
+        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as! NSValue
         let keyboardSize: CGSize = value.CGRectValue().size
         let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
         scrollView.contentInset = contentInsets

@@ -40,9 +40,9 @@ class ForgetPasswordViewController: UIViewController {
         Alamofire.request(.POST, APIModel().APIUrl+"/auth/forgot", parameters: ["username": username.text!])
             .responseJSON { (request, response, data, error) in
                 if(error == nil && data != nil) {
-                    var info = data as NSDictionary
+                    var info = data as! NSDictionary
                     println(info)
-                    if var _id = info["_id"] as String? { // TODO the condition maybe wrong
+                    if var _id = info["_id"] as! String? { // TODO the condition maybe wrong
                         // signin success
                         //println(_id);
                         println("restore success")
@@ -50,7 +50,7 @@ class ForgetPasswordViewController: UIViewController {
                     }
                     else {
                         // signin fail
-                        var messageString = info["message"] as String!
+                        var messageString = info["message"] as! String!
                         println(messageString);
                         //let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
                         //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
@@ -71,7 +71,7 @@ class ForgetPasswordViewController: UIViewController {
     }
     
     // Auto close keyboard when user click other region except the textfield
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         username.resignFirstResponder()
     }
     
@@ -95,7 +95,7 @@ class ForgetPasswordViewController: UIViewController {
     // Called when the UIKeyboardDidShowNotification is sent.
     func keyboardWillBeShown(sender: NSNotification) {
         let info: NSDictionary = sender.userInfo!
-        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as NSValue
+        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as! NSValue
         let keyboardSize: CGSize = value.CGRectValue().size
         let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
         scrollView.contentInset = contentInsets

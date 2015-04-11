@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-import SimpleAlert
+//import SimpleAlert
 import Foundation
 
 class SigninViewController: UIViewController {
@@ -60,24 +60,24 @@ class SigninViewController: UIViewController {
         Alamofire.request(.POST, APIModel().APIUrl+"/auth/signin", parameters: ["username": username.text!, "password": password.text!])
             .responseJSON { (request, response, data, error) in
                 if(error == nil && data != nil) {
-                    var info = data as NSDictionary
+                    var info = data as! NSDictionary
                     println(info)
-                    if var _id = info["_id"] as String? {
+                    if var _id = info["_id"] as! String? {
                         // signin success
                         //println(_id);
                         println("signin success")
                         self.base.cacheSetString("userid", value: _id)
-                        self.base.cacheSetString("displayName", value: info["displayName"] as String)
-                        self.base.cacheSetString("username", value: info["username"] as String)
-                        self.base.cacheSetString("headimg", value: APIModel().APIUrl+"/"+(info["headimg"] as String))
-                        self.base.cacheSetString("loverid", value: info["lover"] as String)
+                        self.base.cacheSetString("displayName", value: info["displayName"] as! String)
+                        self.base.cacheSetString("username", value: info["username"] as! String)
+                        self.base.cacheSetString("headimg", value: APIModel().APIUrl+"/"+(info["headimg"] as! String))
+                        self.base.cacheSetString("loverid", value: info["lover"] as! String)
                         self.performSegueWithIdentifier("signinsuccess", sender: self)
                         //var messageView = MessageViewController()
                         //self.presentViewController(messageView, animated: true, completion: nil)
                     }
                     else {
                         // signin fail
-                        var messageString = info["message"] as String!
+                        var messageString = info["message"] as! String!
                         println(messageString);
                         //let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
                         //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
@@ -98,7 +98,7 @@ class SigninViewController: UIViewController {
     }
     
     // Auto close keyboard when user click other region except the textfield
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         username.resignFirstResponder()
         password.resignFirstResponder()
     }
@@ -123,7 +123,7 @@ class SigninViewController: UIViewController {
     // Called when the UIKeyboardDidShowNotification is sent.
     func keyboardWillBeShown(sender: NSNotification) {
         let info: NSDictionary = sender.userInfo!
-        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as NSValue
+        let value: NSValue = info.valueForKey(UIKeyboardFrameBeginUserInfoKey) as! NSValue
         let keyboardSize: CGSize = value.CGRectValue().size
         let contentInsets: UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
         scrollView.contentInset = contentInsets
