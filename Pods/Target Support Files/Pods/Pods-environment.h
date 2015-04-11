@@ -9,13 +9,13 @@
 // Alamofire
 #define COCOAPODS_POD_AVAILABLE_Alamofire
 #define COCOAPODS_VERSION_MAJOR_Alamofire 1
-#define COCOAPODS_VERSION_MINOR_Alamofire 1
-#define COCOAPODS_VERSION_PATCH_Alamofire 4
+#define COCOAPODS_VERSION_MINOR_Alamofire 2
+#define COCOAPODS_VERSION_PATCH_Alamofire 0
 
 // SimpleAlert
 #define COCOAPODS_POD_AVAILABLE_SimpleAlert
 #define COCOAPODS_VERSION_MAJOR_SimpleAlert 1
-#define COCOAPODS_VERSION_MINOR_SimpleAlert 0
+#define COCOAPODS_VERSION_MINOR_SimpleAlert 2
 #define COCOAPODS_VERSION_PATCH_SimpleAlert 1
 
 // SwiftyJSON
