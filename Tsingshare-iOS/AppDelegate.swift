@@ -13,10 +13,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var types: UIUserNotificationType = UIUserNotificationType.Badge |
+            UIUserNotificationType.Alert |
+            UIUserNotificationType.Sound
+        
+        var settings: UIUserNotificationSettings = UIUserNotificationSettings(
+            forTypes: types, categories: nil
+        )
+        
+        application.registerUserNotificationSettings( settings )
+        application.registerForRemoteNotifications()
+        
         return true
+    }
+    
+    // implemented in your application delegate
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        println("Got token data! (deviceToken)")
+        
+        /*var characterSet: NSCharacterSet = NSCharacterSet( charactersInString: "<>" )
+        
+        var deviceTokenString: String = ( deviceToken.description as NSString )
+            .stringByTrimmingCharactersInSet( characterSet )
+            .stringByReplacingOccurrencesOfString( " ", withString: "" ) as String
+        
+        println(deviceTokenString)
+        
+        let jsonObject: AnyObject = [ "deviceTokenString": deviceTokenString.utf8 ]
+        
+        HTTPPostJSON(
+            "http://development.coolaj86.com:3030/api/push-demo"
+            , jsonObj: jsonObject
+            , callback: { (data, error) -> Void in
+                if (error) {
+                    NSNotificationCenter
+                        .defaultCenter()
+                        .postNotificationName("deviceRegistrationFailed", object: nil)
+                } else {
+                    NSNotificationCenter
+                        .defaultCenter()
+                        .postNotificationName("deviceRegistrationSucceeded", object: nil)
+                }
+            }
+        )*/
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println(error.localizedDescription)
     }
 
     func applicationWillResignActive(application: UIApplication) {
