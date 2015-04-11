@@ -49,8 +49,8 @@ class MessageViewController: UIViewController {
     
     func refresh(Sender: AnyObject)
     {
-        println("refresh")
-        println(self.currentPage)
+        //println("refresh")
+        //println(self.currentPage)
         if(self.currentPage == 0) {
             self.refreshControl.endRefreshing()
             return
@@ -62,13 +62,18 @@ class MessageViewController: UIViewController {
                 if(error == nil && data != nil) {
                     //println(data.count)
                     var data = JSON(data!)
-                    var tmpArr: [String] = []
+                    var tmpArr: [JSON] = []
                     for var i=0;i<data.count;i++ {
                         //println(i)
                         if let content = data[i]["content"].string{
                             //println(content)
                             //println(created)
-                            tmpArr.append(content)
+                            if(data[i]["user"]["_id"].stringValue == self.base.cacheGetString("userid")) {
+                                tmpArr.append(JSON(["content": content, "isMe": true]))
+                            }
+                            else {
+                                tmpArr.append(JSON(["content": content, "isMe": false]))
+                            }
                         }
                     }
                     self.dataArr = tmpArr+self.dataArr
@@ -109,7 +114,7 @@ class MessageViewController: UIViewController {
                         //println(_id);
                         if var content = info["content"] as! String? {
                             self.content.text = nil
-                            self.dataArr.append(content)
+                            self.dataArr.append(JSON(["content": content, "isMe": true]))
                             self.tableView.reloadData()
                             if(self.dataArr.count >= self.pageSize) {
                                 self.tableView.setContentOffset(CGPointMake(0, self.tableView.contentSize.height - self.tableView.frame.size.height), animated: true) // 跳转到列表最下方
@@ -139,7 +144,7 @@ class MessageViewController: UIViewController {
         }
     }
     
-    var dataArr: [String] = []
+    var dataArr: [JSON] = []
         
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataArr.count
@@ -148,7 +153,14 @@ class MessageViewController: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
         
-        cell.textLabel?.text = self.dataArr[indexPath.row] as String
+        var result = self.dataArr[indexPath.row]
+        if(result["isMe"].boolValue) {
+            cell.textLabel?.textAlignment = .Right
+        }
+        else {
+            cell.textLabel?.textAlignment = .Left
+        }
+        cell.textLabel?.text = result["content"].stringValue
         
         return cell
     }

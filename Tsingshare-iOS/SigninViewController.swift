@@ -24,7 +24,7 @@ class SigninViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if(base.cacheGetString("userid") != "") {
-            println("signinsuccess")
+            //println("signinsuccess")
             self.performSegueWithIdentifier("signinsuccess", sender: self)
         }
     }
@@ -61,11 +61,11 @@ class SigninViewController: UIViewController {
             .responseJSON { (request, response, data, error) in
                 if(error == nil && data != nil) {
                     var info = data as! NSDictionary
-                    println(info)
+                    //println(info)
                     if var _id = info["_id"] as! String? {
                         // signin success
                         //println(_id);
-                        println("signin success")
+                        //println("signin success")
                         self.base.cacheSetString("userid", value: _id)
                         self.base.cacheSetString("displayName", value: info["displayName"] as! String)
                         self.base.cacheSetString("username", value: info["username"] as! String)
@@ -78,7 +78,7 @@ class SigninViewController: UIViewController {
                     else {
                         // signin fail
                         var messageString = info["message"] as! String!
-                        println(messageString);
+                        //println(messageString);
                         //let alert = SimpleAlert.Controller(title: "Signin Fail", message: messageString, style: .Alert)
                         //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
                         //self.presentViewController(alert, animated: true, completion: nil)
@@ -87,7 +87,7 @@ class SigninViewController: UIViewController {
                     }
                 }
                 else {
-                    println("network error")
+                    //println("network error")
                     //let alert = SimpleAlert.Controller(title: "Signin Fail", message: "network error", style: .Alert)
                     //alert.addAction(SimpleAlert.Action(title: "OK", style: .OK))
                     //self.presentViewController(alert, animated: true, completion: nil)
